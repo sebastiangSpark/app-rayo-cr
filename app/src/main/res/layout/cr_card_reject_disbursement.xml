@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@color/pale_sky_50"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="24dp"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="32dp">
+
+        <TextView
+            android:id="@+id/title_approval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡Atención!"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/sf_pro_bold"
+            android:textColor="@color/Matisse_700"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/text_approval_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="¡Actualmente no cumples con los requisitos para acceder a nuestros prestamos!"
+            android:textSize="14sp"
+            android:fontFamily="@font/sf_pro"
+            android:textColor="@color/woodsmoke_800"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_approval"/>
+        <TextView
+            android:id="@+id/text_approval_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Si requieres más información comunícate al 4103-3400"
+            android:textSize="14sp"
+            android:fontFamily="@font/sf_pro"
+            android:textColor="@color/woodsmoke_800"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_approval_first"/>
+
+        <TextView
+            android:id="@+id/tvRejectRedirectPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="www.rayo.cr"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="10dp"
+            android:textSize="18sp"
+            android:textFontWeight="600"
+            android:fontFamily="@font/sf_pro"
+            android:textColor="@color/Matisse_800"
+            android:background="@drawable/rounded_background_orange_25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_approval_two"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

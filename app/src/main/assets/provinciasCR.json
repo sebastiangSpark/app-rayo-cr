@@ -1,0 +1,921 @@
+[
+    {
+    "provincia": "Alajuela",
+    "cantones": [
+    {
+    "nombre": "Alajuela",
+    "distritos": [
+    "ALAJUELA",
+    "SAN JOSÉ",
+    "CARRIZAL",
+    "SAN ANTONIO",
+    "GUÁCIMA",
+    "SAN ISIDRO",
+    "SABANILLA",
+    "SAN RAFAEL",
+    "RÍO SEGUNDO",
+    "DESAMPARADOS",
+    "TAMBOR",
+    "GARITA",
+    "SARAPIQUÍ",
+    "TURRÚCARES"
+    ]
+   },
+   {
+    "nombre": "San Ramón",
+    "distritos": [
+    "SAN RAMÓN",
+    "SANTIAGO",
+    "SAN JUAN",
+    "PIEDADES NORTE",
+    "PIEDADES SUR",
+    "SAN RAFAEL",
+    "SAN ISIDRO",
+    "ÁNGELES",
+    "ALFARO",
+    "VOLIO",
+    "CONCEPCIÓN",
+    "ZAPOTAL",
+    "PEÑAS BLANCAS"
+    ]
+    },
+    {
+    "nombre": "Grecia",
+    "distritos": [
+    "GRECIA",
+    "SAN ISIDRO",
+    "SAN JOSÉ",
+    "SAN ROQUE",
+    "TACARES",
+    "RÍO CUARTO",
+    "PUENTE DE PIEDRA",
+    "BOLÍVAR"
+     ]
+    },
+    {
+    "nombre": "San Mateo",
+    "distritos": [
+    "SAN MATEO",
+    "DESMONTE",
+    "JESÚS MARÍA",
+    "LABRADOR"
+    ]
+   },
+   {
+    "nombre": "Atenas",
+    "distritos": [
+    "ATENAS",
+    "JESÚS",
+    "MERCEDES",
+    "SAN ISIDRO",
+    "CONCEPCIÓN",
+    "SAN JOSE",
+    "SANTA EULALIA",
+    "ESCOBAL"
+    ]
+   },
+   {
+    "nombre": "Naranjo",
+    "distritos": [
+    "NARANJO",
+    "SAN MIGUEL",
+    "SAN JOSÉ",
+    "CIRRÍ SUR",
+    "SAN JERÓNIMO",
+    "SAN JUAN",
+    "EL ROSARIO",
+    "PALMITOS"
+    ]
+   },
+   {
+    "nombre": "Palmares",
+    "distritos": [
+    "ZARAGOZA",
+    "BUENOS AIRES",
+    "SANTIAGO",
+    "CANDELARIA",
+    "ESQUÍPULAS",
+    "LA GRANJA",
+    "PALMARES"
+    ]
+   },
+   {
+    "nombre": "Poás",
+    "distritos": [
+    "SAN PEDRO",
+    "SAN JUAN",
+    "SAN RAFAEL",
+    "CARRILLOS",
+    "SABANA REDONDA"
+    ]
+   },
+   {
+    "nombre": "Orotina",
+    "distritos": [
+    "OROTINA",
+    "EL MASTATE",
+    "HACIENDA VIEJA",
+    "COYOLAR",
+    "LA CEIBA"
+    ]
+   },
+   {
+    "nombre": "San Carlos",
+    "distritos": [
+    "QUESADA",
+    "FLORENCIA",
+    "BUENAVISTA",
+    "AGUAS ZARCAS",
+    "VENECIA",
+    "PITAL",
+    "LA FORTUNA",
+    "LA TIGRA",
+    "LA PALMERA",
+    "VENADO",
+    "CUTRIS",
+    "MONTERREY",
+    "POCOSOL"
+    ]
+   },
+   {
+    "nombre": "Zarcero",
+    "distritos": [
+    "ZARCERO",
+    "LAGUNA",
+    "TAPESCO",
+    "GUADALUPE",
+    "PALMIRA",
+    "ZAPOTE",
+    "BRISAS"
+    ]
+   },
+   {
+    "nombre": "Valverde Vega",
+    "distritos": [
+    "SARCHÍ NORTE",
+    "SARCHÍ SUR",
+    "TORO AMARILLO",
+    "SAN PEDRO",
+    "RODRÍGUEZ"
+    ]
+   },
+   {
+    "nombre": "Upala",
+    "distritos": [
+    "UPALA",
+    "AGUAS CLARAS",
+    "SAN JOSÉ o PIZOTE",
+    "BIJAGUA",
+    "DELICIAS",
+    "DOS RÍOS",
+    "YOLILLAL",
+    "CANALETE"
+    ]
+   },
+   {
+    "nombre": "Los Chiles",
+    "distritos": [
+    "LOS CHILES",
+    "CAÑO NEGRO",
+    "EL AMPARO",
+    "SAN JORGE"
+    ]
+   },
+   {
+    "nombre": "Guatuso",
+    "distritos": [
+    "SAN RAFAEL",
+    "BUENAVISTA",
+    "COTE",
+    "KATIRA"
+    ]
+   }
+    ]
+   },
+    {
+    "provincia": "Cartago",
+    "cantones": [
+   {
+    "nombre": "Cartago",
+    "distritos": [
+    "ORIENTAL",
+    "OCCIDENTAL",
+    "CARMEN",
+    "SAN NICOLÁS",
+    "AGUACALIENTE o SAN FRANCISCO",
+    "GUADALUPE o ARENILLA",
+    "LLANO GRANDE",
+    "QUEBRADILLA",
+    "CORRALILLO",
+    "TIERRA BLANCA",
+    "DULCE NOMBRE"
+    ]
+   },
+   {
+    "nombre": "Paraíso",
+    "distritos": [
+    "PARAÍSO",
+    "SANTIAGO",
+    "OROSI",
+    "CACHÍ",
+    "LLANOS DE SANTA LUCÍA"
+    ]
+   },
+   {
+    "nombre": "La Unión",
+    "distritos": [
+    "TRES RÍOS",
+    "SAN DIEGO",
+    "SAN JUAN",
+    "SAN RAFAEL",
+    "CONCEPCIÓN",
+    "DULCE NOMBRE",
+    "SAN RAMÓN",
+    "RÍO AZUL"
+    ]
+   },
+   {
+    "nombre": "Jiménez",
+    "distritos": [
+    "JUAN VIÑAS",
+    "TUCURRIQUE",
+    "PEJIBAYE"
+    ]
+   },
+   {
+    "nombre": "Turrialba",
+    "distritos": [
+    "LA SUIZA",
+    "PERALTA",
+    "SANTA CRUZ",
+    "TURRIALBA",
+    "SANTA TERESITA",
+    "PAVONES",
+    "TUIS",
+    "TAYUTIC",
+    "SANTA ROSA",
+    "TRES EQUIS",
+    "LA ISABEL",
+    "CHIRRIPÓ"
+    ]
+   },
+   {
+    "nombre": "Alvarado",
+    "distritos": [
+    "PACAYAS",
+    "CERVANTES",
+    "CAPELLADES"
+    ]
+   },
+   {
+    "nombre": "Oreamuno",
+    "distritos": [
+    "SAN RAFAEL",
+    "COT",
+    "POTRERO CERRADO",
+    "CIPRESES",
+    "SANTA ROSA"
+    ]
+   },
+   {
+    "nombre": "El Guarco",
+    "distritos": [
+    "EL TEJAR",
+    "SAN ISIDRO",
+    "TOBOSI",
+    "PATIO DE AGUA"
+    ]
+   }
+    ]
+   },
+    {
+    "provincia": "Guanacaste",
+    "cantones": [
+   {
+    "nombre": "Liberia",
+    "distritos": [
+    "LIBERIA",
+    "CAÑAS DULCES",
+    "NACASCOLO",
+    "CURUBANDÉ",
+    "MAYORGA"
+    ]
+   },
+   {
+    "nombre": "Nicoya",
+    "distritos": [
+    "NICOYA",
+    "MANSIÓN",
+    "SAN ANTONIO",
+    "QUEBRADA HONDA",
+    "SÁMARA",
+    "NOSARA",
+    "BELÉN DE NOSARITA"
+    ]
+   },
+   {
+    "nombre": "Santa Cruz",
+    "distritos": [
+    "SANTA CRUZ",
+    "BOLSÓN",
+    "VEINTISIETE DE ABRIL",
+    "TEMPATE",
+    "CARTAGENA",
+    "CUAJINIQUIL",
+    "DIRIÁ",
+    "CABO VELAS",
+    "TAMARINDO"
+    ]
+   },
+   {
+    "nombre": "Bagaces",
+    "distritos": [
+    "BAGACES",
+    "LA FORTUNA",
+    "MOGOTE",
+    "RÍO NARANJO"
+    ]
+   },
+   {
+    "nombre": "Carrillo",
+    "distritos": [
+    "FILADELFIA",
+    "PALMIRA",
+    "SARDINAL",
+    "BELÉN"
+    ]
+   },
+   {
+    "nombre": "Cañas",
+    "distritos": [
+    "CAÑAS",
+    "PALMIRA",
+    "SAN MIGUEL",
+    "BEBEDERO",
+    "POROZAL"
+    ]
+   },
+   {
+    "nombre": "Abangáres",
+    "distritos": [
+    "LAS JUNTAS",
+    "SIERRA",
+    "SAN JUAN",
+    "COLORADO"
+    ]
+   },
+   {
+    "nombre": "Tilarán",
+    "distritos": [
+    "TILARÁN",
+    "QUEBRADA GRANDE",
+    "TRONADORA",
+    "SANTA ROSA",
+    "LÍBANO",
+    "TIERRAS MORENAS",
+    "ARENAL"
+    ]
+   },
+   {
+    "nombre": "Nandayure",
+    "distritos": [
+    "CARMONA",
+    "SANTA RITA",
+    "ZAPOTAL",
+    "PORVENIR",
+    "BEJUCO",
+    "SAN PABLO"
+    ]
+   },
+   {
+    "nombre": "La Cruz",
+    "distritos": [
+    "LA CRUZ",
+    "SANTA CECILIA",
+    "LA GARITA",
+    "SANTA ELENA"
+    ]
+   },
+   {
+    "nombre": "Hojancha",
+    "distritos": [
+    "HOJANCHA",
+    "MONTE ROMO",
+    "PUERTO CARRILLO",
+    "HUACAS"
+    ]
+   }
+    ]
+   },
+   {
+    "provincia": "Heredia",
+    "cantones": [
+   {
+    "nombre": "Heredia",
+    "distritos": [
+    "HEREDIA",
+    "SAN FRANCISCO",
+    "ULLOA",
+    "VARABLANCA",
+    "MERCEDES"
+    ]
+   },
+   {
+    "nombre": "Barva",
+    "distritos": [
+    "BARVA",
+    "SAN PEDRO",
+    "SAN PABLO",
+    "SAN ROQUE",
+    "SANTA LUCÍA",
+    "SAN JOSÉ DE LA MONTAÑA"
+    ]
+   },
+   {
+    "nombre": "Santo Domingo",
+    "distritos": [
+    "SANTO DOMINGO",
+    "SAN VICENTE",
+    "SAN MIGUEL",
+    "PARACITO",
+    "SANTO TOMÁS",
+    "SANTA ROSA",
+    "TURES",
+    "PARÁ"
+    ]
+   },
+   {
+    "nombre": "Santa Bárbara",
+    "distritos": [
+    "SANTA BÁRBARA",
+    "SAN PEDRO",
+    "SAN JUAN",
+    "JESÚS",
+    "SANTO DOMINGO",
+    "PURABÁ"
+    ]
+   },
+   {
+    "nombre": "San Rafaél",
+    "distritos": [
+    "SAN RAFAEL",
+    "SAN JOSECITO",
+    "SANTIAGO",
+    "ÁNGELES",
+    "CONCEPCIÓN"
+    ]
+   },
+   {
+    "nombre": "San Isidro",
+    "distritos": [
+    "SAN ISIDRO",
+    "SAN JOSÉ",
+    "CONCEPCIÓN",
+    "SAN FRANCISCO"
+    ]
+   },
+   {
+    "nombre": "Belén",
+    "distritos": [
+    "SAN ANTONIO",
+    "LA RIBERA",
+    "LA ASUNCIÓN"
+    ]
+   },
+   {
+    "nombre": "Flores",
+    "distritos": [
+    "SAN JOAQUÍN",
+    "BARRANTES",
+    "LLORENTE"
+    ]
+   },
+   {
+    "nombre": "San Pablo",
+    "distritos": [
+    "SAN PABLO",
+    "RINCÓN DE SABANILLA"
+    ]
+   },
+   {
+    "nombre": "Sarapiquí",
+    "distritos": [
+    "PUERTO VIEJO",
+    "LA VIRGEN",
+    "LAS HORQUETAS",
+    "LLANURAS DEL GASPAR",
+    "CUREÑA"
+    ]
+   }
+    ]
+   },
+   {
+    "provincia": "Limón",
+    "cantones": [
+   {
+    "nombre": "Pococí",
+    "distritos": [
+    "GUÁPILES",
+    "JIMÉNEZ",
+    "RITA",
+    "ROXANA",
+    "CARIARI",
+    "COLORADO",
+    "LA COLONIA"
+    ]
+   },
+   {
+    "nombre": "Siquirres",
+    "distritos": [
+    "SIQUIRRES",
+    "PACUARITO",
+    "FLORIDA",
+    "GERMANIA",
+    "EL CAIRO",
+    "ALEGRÍA"
+    ]
+   },
+   {
+    "nombre": "Talamanca",
+    "distritos": [
+    "BRATSI",
+    "SIXAOLA",
+    "CAHUITA",
+    "TELIRE"
+    ]
+   },
+   {
+    "nombre": "Matina",
+    "distritos": [
+    "MATINA",
+    "BATÁN",
+    "CARRANDI"
+    ]
+   },
+   {
+    "nombre": "Guácimo",
+    "distritos": [
+    "GUÁCIMO",
+    "MERCEDES",
+    "POCORA",
+    "RÍO JIMÉNEZ",
+    "DUACARÍ"
+    ]
+   },
+   {
+    "nombre": "Limón",
+    "distritos": [
+    "LIMÓN",
+    "VALLE LA ESTRELLA",
+    "RÍO BLANCO",
+    "MATAMA"
+    ]
+   }
+    ]
+   },
+   {
+    "provincia": "Puntarenas",
+    "cantones": [
+   {
+    "nombre": "Puntarenas",
+    "distritos": [
+    "ACAPULCO",
+    "EL ROBLE",
+    "ARANCIBIA",
+    "PUNTARENAS",
+    "PITAHAYA",
+    "CHOMES",
+    "LEPANTO",
+    "PAQUERA",
+    "MANZANILLO",
+    "GUACIMAL",
+    "BARRANCA",
+    "MONTE VERDE",
+    "ISLA DEL COCO",
+    "CÓBANO",
+    "CHACARITA",
+    "CHIRA"
+    ]
+   },
+   {
+    "nombre": "Esparza",
+    "distritos": [
+    "ESPÍRITU SANTO",
+    "SAN JUAN GRANDE",
+    "MACACONA",
+    "SAN RAFAEL",
+    "SAN JERÓNIMO"
+    ]
+   },
+   {
+    "nombre": "Buenos Aires",
+    "distritos": [
+    "BUENOS AIRES",
+    "VOLCÁN",
+    "POTRERO GRANDE",
+    "BORUCA",
+    "PILAS",
+    "COLINAS",
+    "CHÁNGUENA",
+    "BIOLLEY",
+    "BRUNKA"
+    ]
+   },
+   {
+    "nombre": "Montes de Oro",
+    "distritos": [
+    "MIRAMAR",
+    "LA UNIÓN",
+    "SAN ISIDRO"
+    ]
+   },
+   {
+    "nombre": "Osa",
+    "distritos": [
+    "PUERTO CORTÉS",
+    "PALMAR",
+    "SIERPE",
+    "BAHÍA BALLENA",
+    "PIEDRAS BLANCAS",
+    "BAHÍA DRAKE"
+    ]
+   },
+   {
+    "nombre": "Quepos",
+    "distritos": [
+    "QUEPOS",
+    "SAVEGRE",
+    "NARANJITO"
+    ]
+   },
+   {
+    "nombre": "Golfito",
+    "distritos": [
+    "GOLFITO",
+    "PUERTO JIMÉNEZ",
+    "GUAYCARÁ",
+    "PAVÓN"
+    ]
+   },
+   {
+    "nombre": "Coto Brus",
+    "distritos": [
+    "SAN VITO",
+    "SABALITO",
+    "AGUABUENA",
+    "LIMONCITO",
+    "PITTIER"
+    ]
+   },
+   {
+    "nombre": "Parrita",
+    "distritos": [
+    "PARRITA"
+    ]
+   },
+   {
+    "nombre": "Corredores",
+    "distritos": [
+    "CORREDOR",
+    "LA CUESTA",
+    "CANOAS",
+    "LAUREL"
+    ]
+   },
+   {
+    "nombre": "Garabito",
+    "distritos": [
+    "JACÓ",
+    "TÁRCOLES"
+    ]
+   }
+    ]
+   },
+   {
+    "provincia": "San José",
+    "cantones": [
+   {
+    "nombre": "San José",
+    "distritos": [
+    "CARMEN",
+    "MERCED",
+    "HOSPITAL",
+    "CATEDRAL",
+    "ZAPOTE",
+    "SAN FRANCISCO DE DOS RÍOS",
+    "URUCA",
+    "MATA REDONDA",
+    "PAVAS",
+    "HATILLO",
+    "SAN SEBASTIÁN"
+    ]
+   },
+   {
+    "nombre": "Escazú",
+    "distritos": [
+    "ESCAZÚ",
+    "SAN ANTONIO",
+    "SAN RAFAEL"
+    ]
+   },
+   {
+    "nombre": "Desamparados",
+    "distritos": [
+    "DESAMPARADOS",
+    "SAN MIGUEL",
+    "SAN JUAN DE DIOS",
+    "SAN RAFAEL ARRIBA",
+    "SAN ANTONIO",
+    "FRAILES",
+    "PATARRÁ",
+    "SAN CRISTÓBAL",
+    "ROSARIO",
+    "DAMAS",
+    "SAN RAFAEL ABAJO",
+    "GRAVILIAS",
+    "LOS GUIDO"
+    ]
+   },
+   {
+    "nombre": "Puriscal",
+    "distritos": [
+    "SANTIAGO",
+    "MERCEDES SUR",
+    "BARBACOAS",
+    "GRIFO ALTO",
+    "SAN RAFAEL",
+    "CANDELARITA",
+    "DESAMPARADITOS",
+    "SAN ANTONIO",
+    "CHIRES"
+    ]
+   },
+   {
+    "nombre": "Tarrazú",
+    "distritos": [
+    "SAN MARCOS",
+    "SAN LORENZO",
+    "SAN CARLOS"
+    ]
+   },
+   {
+    "nombre": "Aserrí",
+    "distritos": [
+    "ASERRI",
+    "TARBACA",
+    "VUELTA DE JORCO",
+    "SAN GABRIEL",
+    "LEGUA",
+    "MONTERREY",
+    "SALITRILLOS"
+    ]
+   },
+   {
+    "nombre": "Mora",
+    "distritos": [
+    "COLÓN",
+    "GUAYABO",
+    "TABARCIA",
+    "PIEDRAS NEGRAS",
+    "PICAGRES",
+    "JARIS"
+    ]
+   },
+   {
+    "nombre": "Goicoechea",
+    "distritos": [
+    "GUADALUPE",
+    "SAN FRANCISCO",
+    "CALLE BLANCOS",
+    "MATA DE PLÁTANO",
+    "IPÍS",
+    "RANCHO REDONDO",
+    "PURRAL"
+    ]
+   },
+   {
+    "nombre": "Alajuelita",
+    "distritos": [
+    "ALAJUELITA",
+    "SAN JOSECITO",
+    "SAN ANTONIO",
+    "CONCEPCIÓN",
+    "SAN FELIPE"
+    ]
+   },
+   {
+    "nombre": "Vásquez de Coronado",
+    "distritos": [
+    "SAN ISIDRO",
+    "SAN RAFAEL",
+    "DULCE NOMBRE DE JESÚS",
+    "PATALILLO",
+    "CASCAJAL"
+    ]
+   },
+   {
+    "nombre": "Santa Ana",
+    "distritos": [
+    "SANTA ANA",
+    "SALITRAL",
+    "POZOS",
+    "URUCA",
+    "PIEDADES",
+    "BRASIL"
+    ]
+   },
+   {
+    "nombre": "Acosta",
+    "distritos": [
+    "GUAITIL Villa",
+    "PALMICHAL",
+    "CANGREJAL",
+    "SAN IGNACIO",
+    "SABANILLAS"
+    ]
+   },
+   {
+    "nombre": "Tibás",
+    "distritos": [
+    "SAN JUAN",
+    "CINCO ESQUINAS",
+    "ANSELMO LLORENTE",
+    "LEON XIII",
+    "COLIMA"
+    ]
+   },
+   {
+    "nombre": "Moravia",
+    "distritos": [
+    "SAN VICENTE",
+    "SAN JERÓNIMO",
+    "LA TRINIDAD"
+    ]
+   },
+   {
+    "nombre": "Montes de Oca",
+    "distritos": [
+    "SAN PEDRO",
+    "SABANILLA",
+    "MERCEDES",
+    "SAN RAFAEL"
+    ]
+   },
+   {
+    "nombre": "Turrubares",
+    "distritos": [
+    "SAN PABLO",
+    "SAN PEDRO",
+    "SAN JUAN DE MATA",
+    "SAN LUIS",
+    "CARARA"
+    ]
+   },
+   {
+    "nombre": "Dota",
+    "distritos": [
+    "SANTA MARÍA",
+    "JARDÍN",
+    "COPEY"
+    ]
+   },
+   {
+    "nombre": "Curridabat",
+    "distritos": [
+    "CURRIDABAT",
+    "GRANADILLA",
+    "SÁNCHEZ",
+    "TIRRASES"
+    ]
+   },
+   {
+    "nombre": "Pérez Zeledón",
+    "distritos": [
+    "SAN ISIDRO DE EL GENERAL",
+    "EL GENERAL",
+    "DANIEL FLORES",
+    "RIVAS",
+    "SAN PEDRO",
+    "PLATANARES",
+    "PEJIBAYE",
+    "CAJÓN",
+    "BARÚ",
+    "RÍO NUEVO",
+    "PÁRAMO",
+    "LA AMISTAD"
+    ]
+   },
+   {
+    "nombre": "León Cortéz Castro",
+    "distritos": [
+    "SAN PABLO",
+    "SAN ANDRÉS",
+    "LLANO BONITO",
+    "SAN ISIDRO",
+    "SANTA CRUZ",
+    "SAN ANTONIO"
+    ]
+   }
+    ]
+   }
+    ]

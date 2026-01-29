@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Matisse_600"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="58dp"
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back_toolbar_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Ícono"
+            android:padding="8dp"
+            android:src="@drawable/arrow_left"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/toolbar_layout_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Tratamiento de datos"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginBottom="160dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_layout_toolbar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/first_container_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/container_layout_toolbar">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AUTORIZACIÓN PARA EL TRATAMIENTO DE DATOS PERSONALES:"
+                android:fontFamily="@font/sf_pro_semibold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/sf_pro"
+                android:text="Al hacer clic en el botón acepto, autorizo de manera voluntaria, previa, expresa, e informada el tratamiento de mis datos personales a RAYOCOL S.A.S. (en adelante “RAYO”) identificada con el NIT número 901.287.068-0, cuyo domicilio es en la Carrera 11 A #94 A - 31, Oficina 106 de la Ciudad de Bogotá D.C., como Responsable del tratamiento para que recolecte, capture, registre, use, circule, actualice, procese, almacene, o suprima los mismos para los siguientes propósitos: (i) Procesar, confirmar, cumplir y proveer con los servicios que se lleguen a contratar, (ii) Comercializar y promocionar, (iii) Actualizar datos y brindar información relevante, (iv) Asegurar y prestar el servicio de atención al USUARIO, (v) Efectuar la gestión de cobranza, la cual se adelantará directamente o a través de terceros por medio de los canales de comunicación tanto físicos como remotos, como carta, llamadas telefónicas, email, redes sociales tales como Facebook, o mensajes de texto (a través de SMS, sitio web o aplicaciones móviles), WhatsApp u otras plataformas de mensajería instantánea, al número de celular que he registrado o cualquier otro dato de contacto que haya informado, con el objeto de hacerme llegar información relacionada con las finalidades descritas, a menos que en documento que será parte del contrato de crédito que suscriba con la entidad indique no autorizo alguno de los canales de comunicación establecidos. (vi) para transferir o transmitir los datos personales a proveedores, comercios, empresas y/o entidades afiliadas o aliados comerciales con los que se haya pactado un acuerdo de transferencia de datos, ya sean transferidos en territorio colombiano o en el extranjero, (vii) Efectuar consultas y reportes a las centrales de riesgos crediticio constituidas en nuestro país, de acuerdo con lo prescrito en la Ley 1266 de 2008 y, distintas autoridades administrativas de control y vigilancia, autoridades de policía o autoridades judiciales o agencias de información comercial, cuando así sea necesario en atención a la relación contractual y/o por obligación legal de la compañía; (viii) Atender mis peticiones, quejas o reclamos, o requerimientos realizados por autoridades en ejercicio de sus funciones; (ix) Conservar la información para fines históricos y/o estadísticos."
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/sf_pro"
+                android:text="En ese sentido, entiendo que es de carácter facultativo suministrar información que verse sobre Datos Sensibles, entendidos como aquellos que afectan la intimidad tales como raza, etnia, orientación sexual, estado de salud y existencia de algún tipo de discapacidad; o sobre menores de edad, y que el no suministro de los mismos no podrá considerarse como condicionante para realizar alguna clase de actividad en la que me encuentre involucrado. "
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/sf_pro"
+                android:text="Así mismo, en caso del tratamiento de datos personales de menores de edad, en caso de proceder y atendiendo al ejercicio de la patria potestad, en calidad de padre, madre o tutor del menor edad autorizo que sus datos sean recolectados, capturados, registrados, almacenados, usados, puestos en circulación, actualizados, procesados, transmitidos a terceros dentro y fuera del territorio nacional y suprimidos siempre y cuando las finalidades del tratamiento de sus datos sean las mencionadas con anterioridad. "
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/sf_pro"
+                android:text="Igualmente, declaro que cuento con la autorización de los terceros que registré como codeudor, deudor solidario, avalista y garante para que sus datos personales sean tratados bajo las mismas finalidades autorizadas en el presente documento. "
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/sf_pro"
+                android:text="Aunado lo anterior, autorizo a RAYO o a quien represente sus derechos, a acceder a mis datos personales contenidos en la base de datos de Operadores de información de seguridad social autorizados por el Ministerio de Salud y Protección Social o de administradoras de pensiones para efectos de conocimiento al cliente y seguimiento comercial a la ejecución de los contratos que se puedan llegar a efectuar, a mis datos personales recolectados por medio del presente formulario, y a mis datos personales contenidos en la base de datos de los operadores de información (centrales de riesgo), para finalidades de gestión de riesgo crediticio tales como: (i) elaboración y circulación a terceros de scores crediticios, herramientas de validación de ingresos, herramientas predictivas de ingresos, herramientas para evitar el fraude y en general, herramientas que permitan adelantar una adecuada gestión del riesgo crediticio. (ii) Compararla, contrastarla y complementarla con la información financiera, comercial, crediticio, de servicios y proveniente de terceros países de Experian."
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/sf_pro"
+                android:text="Finalmente, como Titular de esta información, tengo derecho a conocer, actualizar y rectificar mis datos personales, podré solicitar prueba o revocar esta autorización. Adicionalmente podré requerir ser informado sobre el uso que se ha dado a mis datos, presentar quejas ante la SIC por infracción a la ley, solicitar la supresión de los mismos en los casos en que sea procedente y acceder en forma gratuita a ellos mediante un escrito dirigido a través del correo electrónico info@rayo.com.co o a través de comunicación escrita dirigida a nuestra área de atención al cliente, a la siguiente dirección Carrera 11 A #94 A - 31 de la ciudad de Bogotá D.C. "
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/sf_pro"
+                android:text="Conozco y entiendo que la política de tratamiento de la información, así como sus cambios sustanciales los podré consultar a través del portal web www.rayo.com.co."
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

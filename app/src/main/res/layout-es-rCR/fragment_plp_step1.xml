@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RenewalPlPStep1fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="20dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <!-- Primer Nombre -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Primer nombre*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+
+            <EditText
+                android:id="@+id/form_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/sf_pro_medium"
+                android:hint="ingrese su primer nombre"
+                android:inputType="text"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Apellido -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apellido*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_user_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/sf_pro_medium"
+                android:hint="Ingrese su apellido"
+                android:inputType="text"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_user_lastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Cédula de Ciudadanía -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Cédula de ciudadanía*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_user_document"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/sf_pro_medium"
+                android:hint="Ingrese su número de cédula"
+                android:inputType="number"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_user_document"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Teléfono -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Teléfono*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_user_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/sf_pro_medium"
+                android:hint="Ingresa tu teléfono"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Contraseña -->
+            <!--<TextView
+                android:id="@+id/user_password_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Contraseña*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="Crea una contraseña"
+                app:endIconMode="password_toggle"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/form_password_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_input_background"
+                    android:fontFamily="@font/sf_pro_medium"
+                    android:hint="Crea una contraseña"
+                    android:inputType="textPassword"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="16dp"
+                    android:textColor="#000000"
+                    android:textColorHint="@color/woodsmoke_300"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/login_label_password" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/error_user_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />-->
+
+            <!-- Correo Electrónico -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Correo electrónico*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/sf_pro_medium"
+                android:hint="Ingrese su correo"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Ingresos mensuales* -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Ingresos mensuales*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_ingresos_mensuales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/sf_pro_medium"
+                android:hint="0"
+                android:inputType="number"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_ingresos_mensuales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Antigüedad laboral* -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Antigüedad laboral*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_antiguedad_laboral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:inputType="none"
+                android:focusable="false"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:fontFamily="@font/sf_pro_medium"
+                android:hint="Antigüedad laboral*"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_antiguedad_laboral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Cuantos hijos tiene* -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Cuantos hijos tiene*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_cuantos_hijos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/sf_pro_medium"
+                android:hint="0"
+                android:inputType="number"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_cuantos_hijos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- ¿Cuántas personas dependen de ti económicamente?* -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="¿Cuántas personas dependen de ti económicamente?*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_personas_dependen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/sf_pro_medium"
+                android:hint="0"
+                android:inputType="number"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_personas_dependen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Contraseña para sección miembros* -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Contraseña para sección miembros*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/form_contraseña_miembros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="Ingrese su contraseña"
+                app:endIconMode="password_toggle"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/form_contraseña_miembros_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_input_background"
+                    android:fontFamily="@font/sf_pro_medium"
+                    android:hint="Ingrese su contraseña"
+                    android:inputType="textPassword"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="16dp"
+                    android:textColor="#000000"
+                    android:textColorHint="@color/woodsmoke_300"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/login_label_password" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/error_contraseña_miembros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkbox_user_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro"
+                    android:textSize="14sp"
+                    android:text="Autorizo "
+                    />
+                <TextView
+                    android:id="@+id/textViewTermsAndConditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="términos y condiciones"
+                    android:fontFamily="@font/sf_pro_semibold"
+                    android:textColor="@color/Matisse_700"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewVerifyInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Verifica la información antes de continuar"
+                android:fontFamily="@font/sf_pro_semibold"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="14sp"
+                android:layout_marginTop="16dp"
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/btnNextStep"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/Matisse_700"
+                android:drawableEnd="@drawable/icon"
+                android:paddingHorizontal="88dp"
+                android:text="Guardar y continuar" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

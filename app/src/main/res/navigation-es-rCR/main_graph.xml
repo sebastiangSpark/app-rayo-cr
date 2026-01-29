@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/onboarding_graph"
+    app:startDestination="@id/loadingFragment">
+
+    <fragment
+        android:id="@+id/loadingFragment"
+        android:name="com.rayo.rayoxml.cr.ui.loading.LoadingFragment"
+        android:label="fragment_loading"
+        tools:layout="@layout/fragment_loading">
+
+        <action
+            android:id="@+id/action_loadingFragment_to_loanFragment"
+            app:destination="@id/loanFragment"
+            app:popUpToInclusive="false"/>
+        <action
+            android:id="@+id/action_loadingFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment"
+            app:popUpToInclusive="false"/>
+        <action
+            android:id="@+id/action_global_loadingFragment"
+            app:destination="@id/loadingFragment"
+            app:popUpToInclusive="false">
+            <argument
+                android:name="destinationId"
+                android:defaultValue="0"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.rayo.rayoxml.cr.ui.onboarding.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager">
+        <action
+            android:id="@+id/action_viewPagerFragment_to_selectCountryFragment"
+            app:destination="@id/selectCountryFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/selectCountryFragment"
+        android:name="com.rayo.rayoxml.cr.ui.select_country.SelectCountryFragment"
+        android:label="SelectCountryFragment">
+        <action
+            android:id="@+id/action_selectCountryFragment_to_loanFragment"
+            app:destination="@id/loanFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/loanFragment"
+        android:name="com.rayo.rayoxml.cr.ui.loan.LoanFragment"
+        android:label="fragment_loan"
+        tools:layout="@layout/fragment_loan">
+        <action
+            android:id="@+id/action_loanFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpToInclusive="false"/>
+        <action
+            android:id="@+id/action_loanFragment_to_personalInfoFormFragment"
+            app:destination="@id/personalInfoFormFragment"
+            app:popUpToInclusive="false"/>
+        <action
+            android:id="@+id/action_loanFragment_to_formFragment"
+            app:destination="@id/formFragment" />
+        <action
+            android:id="@+id/action_loanFragment_to_renewalFragment"
+            app:destination="@id/renewalFragment" />
+        <action
+            android:id="@+id/action_loanFragment_to_bankDisbursementFragment"
+            app:destination="@id/bankDisbursementFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/UserVerifyFragment"
+        android:name="com.rayo.rayoxml.cr.ui.loan.UserVerifyFragment"
+        android:label="fragment_user_verify"
+        tools:layout="@layout/fragment_user_verify">
+        <action
+            android:id="@+id/action_UserVerifyFragment_to_formFragment"
+            app:destination="@id/formFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.rayo.rayoxml.cr.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.rayo.rayoxml.cr.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_loanFragment"
+            app:destination="@id/loanFragment"
+            app:popUpToInclusive="false"/>
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpToInclusive="false"/>
+        <action
+            android:id="@+id/action_loginFragment_to_recoverPasswordFragment"
+            app:destination="@id/recoverPasswordFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.rayo.rayoxml.cr.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_personalLoanFragment"
+            app:destination="@id/personalLoanFragment"
+            app:popUpToInclusive="false"/>
+        <action
+            android:id="@+id/action_homeFragment_to_loanFragment"
+            app:destination="@id/loanFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+    <fragment
+        android:id="@+id/personalLoanFragment"
+        android:name="com.rayo.rayoxml.cr.ui.loan.PersonalLoanFragment"
+        android:label="fragment_personal_loan"
+        tools:layout="@layout/fragment_personal_loan">
+        <action
+            android:id="@+id/action_personalLoanFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_personalLoanFragment_to_loanDetailFragment"
+            app:destination="@id/loanDetailFragment"
+            app:popUpTo="@id/personalLoanFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+    <dialog
+        android:id="@+id/verificationDialogFragment"
+        android:name="com.rayo.rayoxml.cr.ui.loading.VerificationDialogFragment"
+        android:label="fragment_verification_dialog"
+        tools:layout="@layout/fragment_verification_dialog">
+        <action
+            android:id="@+id/action_verificationDialogFragment_to_UserVerifyFragment"
+            app:destination="@id/UserVerifyFragment"
+            app:popUpToInclusive="false"/>
+    </dialog>
+    <fragment
+        android:id="@+id/bankInfoFormFragment"
+        android:name="com.rayo.rayoxml.cr.ui.loan.BankInfoFormFragment"
+        android:label="fragment_bank_info_form"
+        tools:layout="@layout/fragment_bank_info_form">
+        <action
+            android:id="@+id/action_bankInfoFormFragment_to_addressInfoFormFragment"
+            app:destination="@id/addressInfoFormFragment"
+            app:popUpToInclusive="false"/>
+        <action
+            android:id="@+id/action_bankInfoFormFragment_to_loanProposalFragment"
+            app:destination="@id/loanProposalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalInfoFormFragment"
+        android:name="com.rayo.rayoxml.cr.ui.loan.PersonalInfoFormFragment"
+        android:label="fragment_personal_info_form"
+        tools:layout="@layout/fragment_personal_info_form">
+        <action
+            android:id="@+id/action_personalInfoFormFragment_to_bankInfoFormFragment"
+            app:destination="@id/bankInfoFormFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+    <fragment
+        android:id="@+id/recoverPasswordFragment"
+        android:name="com.rayo.rayoxml.cr.ui.login.RecoverPasswordFragment"
+        android:label="fragment_recover_password"
+        tools:layout="@layout/fragment_recover_password">
+        <action
+            android:id="@+id/action_recoverPasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+    <fragment
+        android:id="@+id/loanDetailFragment"
+        android:name="com.rayo.rayoxml.cr.ui.loan.LoanDetailFragment"
+        android:label="fragment_loan_detail"
+        tools:layout="@layout/fragment_loan_detail"/>
+    <fragment
+        android:id="@+id/addressInfoFormFragment"
+        android:name="com.rayo.rayoxml.cr.ui.loan.AddressInfoFormFragment"
+        android:label="fragment_address_info_form"
+        tools:layout="@layout/fragment_address_info_form">
+        <action
+            android:id="@+id/action_addressInfoFormFragment_to_formFragment"
+            app:destination="@id/formFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loanOutcomeFragment"
+        android:name="com.rayo.rayoxml.cr.ui.loan.outcome.LoanOutcomeFragment"
+        android:label="fragment_loan_outcome"
+        tools:layout="@layout/fragment_loan_outcome" />
+    <fragment
+        android:id="@+id/paymentMethodScreenFragment"
+        android:name="com.rayo.rayoxml.cr.ui.loan.PaymentMethodScreenFragment"
+        android:label="fragment_payment_method_screen"
+        tools:layout="@layout/fragment_payment_method_screen" >
+        <action
+            android:id="@+id/action_paymentMethodScreenFragment_to_loanFragment"
+            app:destination="@id/loanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loanProposalFragment"
+        android:name="com.rayo.rayoxml.cr.ui.loan.LoanProposalFragment"
+        android:label="fragment_loan_proposal"
+        tools:layout="@layout/fragment_loan_proposal" >
+        <action
+            android:id="@+id/action_loanProposalFragment_to_paymentMethodScreenFragment"
+            app:destination="@id/paymentMethodScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/formFragment"
+        android:name="com.rayo.rayoxml.cr.ui.loan.FormFragment"
+        android:label="FormFragment" >
+        <action
+            android:id="@+id/action_formFragment_to_addressInfoFormFragment"
+            app:destination="@id/addressInfoFormFragment" />
+        <action
+            android:id="@+id/action_formFragment_to_UserVerifyFragment"
+            app:destination="@id/UserVerifyFragment" />
+        <action
+            android:id="@+id/action_formFragment_to_paymentMethodScreenFragment"
+            app:destination="@id/paymentMethodScreenFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bankDisbursementFragment"
+        android:name="com.rayo.rayoxml.cr.ui.disbursement.BankDisbursementFragment"
+        android:label="fragment_bank_disbursement"
+
+        tools:layout="@layout/fragment_bank_disbursement" >
+        <action
+            android:id="@+id/action_bankDisbursementFragment_to_disbursementApprovalFragment"
+            app:destination="@id/disbursementApprovalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tumiDisbursementFragment"
+        android:name="com.rayo.rayoxml.cr.ui.disbursement.TumiDisbursementFragment"
+        android:label="fragment_tumi_disbursement"
+        tools:layout="@layout/fragment_tumi_disbursement" />
+    <fragment
+        android:id="@+id/disbursementApprovalFragment"
+        android:name="com.rayo.rayoxml.cr.ui.disbursement.DisbursementApprovalFragment"
+        android:label="fragment_disbursement_approval"
+        tools:layout="@layout/fragment_disbursement_approval" />
+    <fragment
+        android:id="@+id/renewalFragment"
+        android:name="com.rayo.rayoxml.cr.ui.renewal.RenewalFragment"
+        android:label="fragment_renewal"
+        tools:layout="@layout/fragment_renewal" />
+    <!-- Acción para navegar al RenewalFragment -->
+    <action
+        android:id="@+id/action_to_renewalFragment"
+        app:destination="@id/renewalFragment" />
+    <fragment
+        android:id="@+id/loanTypesFragment"
+        android:name="com.rayo.rayoxml.cr.ui.info.LoanTypesFragment"
+        android:label="fragment_loan_types"
+        tools:layout="@layout/fragment_loan_types" />
+    <fragment
+        android:id="@+id/miniScreenFragment"
+        android:name="com.rayo.rayoxml.cr.ui.info.loanTypesScreen.MiniScreenFragment"
+        android:label="fragment_mini_screen"
+        tools:layout="@layout/fragment_mini_screen" />
+    <fragment
+        android:id="@+id/plusScreenFragment"
+        android:name="com.rayo.rayoxml.cr.ui.info.loanTypesScreen.PlusScreenFragment"
+        android:label="fragment_plus_screen"
+        tools:layout="@layout/fragment_plus_screen" />
+    <fragment
+        android:id="@+id/preguntasFragment"
+        android:name="com.rayo.rayoxml.co.ui.preguntas.PreguntasFragment"
+        android:label="fragment_preguntas"
+        tools:layout="@layout/fragment_preguntas">
+        <action
+            android:id="@+id/action_PreguntasFragment_to_formFragment"
+            app:destination="@id/formFragment" />
+        </fragment>
+    <fragment
+        android:id="@+id/benefitFragment"
+        android:name="com.rayo.rayoxml.CO.ui.info.BenefitFragment"
+        android:label="fragment_benefit"
+        tools:layout="@layout/fragment_benefit" />
+    <fragment
+        android:id="@+id/friendFragment"
+        android:name="com.rayo.rayoxml.CO.ui.info.BenefitScreen.FriendFragment"
+        android:label="fragment_friend"
+        tools:layout="@layout/fragment_friend" />
+    <fragment
+        android:id="@+id/goodFriendFragment"
+        android:name="com.rayo.rayoxml.CO.ui.info.BenefitScreen.GoodFriendFragment"
+        android:label="fragment_good_friend"
+        tools:layout="@layout/fragment_good_friend" />
+    <fragment
+        android:id="@+id/bestFriendFragment"
+        android:name="com.rayo.rayoxml.CO.ui.info.BenefitScreen.BestFriendFragment"
+        android:label="fragment_best_friend"
+        tools:layout="@layout/fragment_best_friend" />
+    <fragment
+        android:id="@+id/superFriendFragment"
+        android:name="com.rayo.rayoxml.CO.ui.info.BenefitScreen.SuperFriendFragment"
+        android:label="fragment_super_friend"
+        tools:layout="@layout/fragment_super_friend" />
+</navigation>

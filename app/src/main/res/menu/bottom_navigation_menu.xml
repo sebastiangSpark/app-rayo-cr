@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:enabled="true"
+        android:title="Inicio"
+        android:icon="@drawable/selector_home"/>
+    <item
+        android:id="@+id/personalLoanFragment"
+        android:enabled="true"
+        android:title="Mis préstamos"
+        android:icon="@drawable/selector_bars"/>
+    <item
+        android:id="@+id/profileFragment"
+        android:enabled="true"
+        android:title="Perfil"
+        android:icon="@drawable/selector_profile"/>
+    <item
+        android:id="@+id/contactButton"
+        android:enabled="true"
+        android:title="Contáctanos"
+        android:icon="@drawable/ic_contact"
+        />
+</menu>

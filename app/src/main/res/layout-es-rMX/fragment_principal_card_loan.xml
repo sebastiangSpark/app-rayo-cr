@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardLoanActive"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="16dp"
+    android:layout_marginHorizontal="24dp"
+    android:elevation="24dp"
+    android:layout_marginBottom="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/card_background"
+    tools:context=".ui.loan.PrincipalCardLoanFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginBottom="6dp">
+    <LinearLayout
+        android:id="@+id/container_header_card_loan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/cardTitle"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:text="Préstamo Rayo Plus"
+            android:layout_weight="1"
+            android:textColor="@color/Matisse_600"
+            android:fontFamily="@font/sf_pro_semibold"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/buttonOpenBottomSheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="12dp"
+            android:src="@drawable/ic_menu_point"
+            app:tint="@color/woodsmoke_600"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_state_card_loan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_header_card_loan">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Monto"
+                android:fontFamily="@font/sf_pro"
+                android:textColor="@color/pale_sky_500"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/cardAmount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="$1,263,043.00"
+                android:textSize="20sp"
+                android:textColor="@color/woodsmoke_900"
+                android:fontFamily="@font/sf_pro_bold"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/cardState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_state"
+            android:textColor="@color/web_orange_600"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:text="pendiente"
+            android:fontFamily="@font/sf_pro_medium"
+            android:paddingHorizontal="11dp"
+            android:paddingVertical="6dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_card_loan"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/woodsmoke_200"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_state_card_loan"
+        />
+
+    <LinearLayout
+        android:id="@+id/container_pay_card_loan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_card_loan">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_money_dialog"
+                app:tint="@color/woodsmoke_600"/>
+            <TextView
+                android:id="@+id/cardPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Cuota: $252,783.75"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/sf_pro"
+                android:textColor="@color/woodsmoke_500"/>
+
+            <LinearLayout
+                android:id="@+id/buttonOpenPaymentInstallment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Matisse_700"
+                android:textSize="12sp"
+                android:fontFamily="@font/sf_pro_medium"
+                android:text="Pagar cuota"
+                />
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:paddingHorizontal="4dp"
+                android:paddingVertical="4dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/arrow_right"
+                app:tint="@color/Matisse_700" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_date_picker" />
+            <TextView
+                android:id="@+id/cardDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:text="Próximo pago: Enero 31, 2025"
+                android:textSize="12sp"
+                android:fontFamily="@font/sf_pro"
+                android:textColor="@color/woodsmoke_500"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

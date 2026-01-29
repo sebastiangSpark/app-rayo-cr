@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.renewal.RenewalProposalFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <include
+                android:id="@+id/loan_proposal_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/loan_proposal_value"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="16dp"
+                />
+
+            <include
+                android:id="@+id/credit_detail_loan_proposal"
+                layout="@layout/credit_detail_loan_proposal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:background="@drawable/card_background">
+                <CheckBox
+                    android:id="@+id/checkbox_user_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/woodsmoke_700"
+                    android:fontFamily="@font/sf_pro"
+                    android:checked="true"
+                    android:text="Acepto "
+                    />
+                <TextView
+                    android:id="@+id/cargo_tecnology"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/sf_pro_semibold"
+                    android:text="Cargo de Tecnología"
+                    android:textColor="@color/Matisse_700"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/upload_linear_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/uploadContainerTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Adjunte su orden patronal para que su depósito se haga efectivo en 24 horas"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/woodsmoke_800"
+                    android:fontFamily="@font/sf_pro_medium"
+                    android:visibility="gone"/>
+
+                <FrameLayout
+                    android:id="@+id/uploadContainerBorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/card_border_dashed"
+                    android:visibility="gone">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/uploadContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@color/pale_sky_50"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="16dp">
+
+                            <!-- Icono -->
+                            <ImageView
+                                android:id="@+id/uploadIcon"
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/ic_document_upload" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/uploadStatusText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/sf_pro"
+                                    android:text="Haz clic para cargar soporte"
+                                    android:textColor="@color/woodsmoke_900"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/uploadTextType"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/sf_pro"
+                                    android:text="PNG, JPG, PDF hasta 20MB"
+                                    android:textColor="@color/woodsmoke_400"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/cancelUpload"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/ic_trash"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </FrameLayout>
+
+                <!-- Ayuda en el proceso* -->
+                <TextView
+                    android:id="@+id/form_need_help_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="¿Requirió ayuda en el proceso?*"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/woodsmoke_700"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/form_need_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edit_text"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_arrow_down"
+                    android:fontFamily="@font/sf_pro_medium"
+                    android:hint="Seleccione una opción"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="16dp"
+                    android:textColorHint="@color/woodsmoke_300"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/error_need_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/error_color"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/text_final_credit_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/final_text_credit_details"
+                android:textColor="@color/woodsmoke_700"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/sf_pro_semibold"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/credit_detail" />
+
+            <Button
+                android:id="@+id/btnNextStepRenewal"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingHorizontal="88dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/Matisse_700"
+                android:drawableEnd="@drawable/icon"
+                android:text="Aceptar propuesta" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

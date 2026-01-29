@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RenewalPlPStep2fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="20dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <!-- Referencia personal -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Nombre completo (Referencia personal)*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_user_name_referer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/sf_pro_medium"
+                android:hint="Ingrese nombre de referencia personal"
+                android:inputType="text"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_user_name_referer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Tel -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Teléfono de la referencia (Referencia personal)*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_user_phone_referer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/sf_pro_medium"
+                android:hint="Ingrese teléfono de referencia personal"
+                android:inputType="number"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_user_phone_referer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Departamento -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Departamento*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_user_department_referer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:inputType="none"
+                android:focusable="false"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:fontFamily="@font/sf_pro_medium"
+                android:hint="Seleccione un departamento"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_user_department_referer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Ciudad -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Ciudad*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_ciudad_referer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/sf_pro_medium"
+                android:hint="Ingrese una ciudad"
+                android:inputType="text"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_ciudad_referer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Dirección exacta* -->
+            <TextView
+                android:id="@+id/user_password_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Dirección exacta*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_dirección_referer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/sf_pro_medium"
+                android:hint="Ingrese la dirección exacta"
+                android:inputType="text"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_dirección_referer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Número de teléfono residencia* -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Número de teléfono residencia*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_tel_referer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/sf_pro_medium"
+                android:hint="Ingrese número de teléfono residencia"
+                android:inputType="number"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_tel_referer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Teléfono celular* -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Teléfono celular*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_cel_referer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/sf_pro_medium"
+                android:hint="Ingrese el teléfono celular"
+                android:inputType="number"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_cel_referer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Plan celular* -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Plan celular*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_plan_cel_referer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:inputType="none"
+                android:focusable="false"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:fontFamily="@font/sf_pro_medium"
+                android:hint="Seleccione el plan celular"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_plan_cel_referer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Salario reportado* -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Salario reportado*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_salario_referer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/sf_pro_medium"
+                android:hint="Ingrese salario reportado"
+                android:inputType="number"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_salario_referer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- ¿A qué EPS está afiliado?* -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="¿A qué EPS está afiliado?*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_EPS_referer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:focusable="false"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/sf_pro_medium"
+                android:hint="Seleccione su EPS"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_EPS_referer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Tipo de afiliado* -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Tipo de afiliado*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_afiliado_type_referer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:focusable="false"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/sf_pro_medium"
+                android:hint="Seleccione tipo de afiliado"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_afiliado_type_referer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- ¿Requirió ayuda de un agente?* -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="¿Requirió ayuda de un agente?*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_agente_referer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:focusable="false"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/sf_pro_medium"
+                android:hint="Seleccione una opción"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_agente_referer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textViewVerifyInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Verifica la información antes de continuar"
+                android:fontFamily="@font/sf_pro_semibold"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="14sp"
+                android:layout_marginTop="16dp"
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/btnNextStep"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/Matisse_700"
+                android:drawableEnd="@drawable/icon"
+                android:paddingHorizontal="88dp"
+                android:text="Guardar y continuar" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

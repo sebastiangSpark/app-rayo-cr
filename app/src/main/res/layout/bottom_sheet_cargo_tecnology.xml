@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:background="@drawable/rounded_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/title_type_account_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cargo de tecnología"
+        android:textColor="@color/woodsmoke_700"
+        android:fontFamily="@font/sf_pro_medium"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="24dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        android:id="@+id/container_text_cargo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_type_account_dialog">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_type_account_dialog">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Si no deseas aceptar los costos relacionados con Tecnología, debes hacer el siguiente proceso para poder acceder a tu solicitud:"
+            android:textColor="@color/woodsmoke_600"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="24dp"
+            android:textSize="14sp"
+/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.  Descargar el "
+                android:textColor="@color/woodsmoke_600"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="24dp"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:id="@+id/form_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="formulario."
+                android:textColor="@color/Matisse_700"
+                android:textAllCaps="false"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/sf_pro"
+                android:textSize="14sp"
+            />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Diligenciar los formatos y enviar los siguientes documentos solicitados en original:"
+            android:textColor="@color/woodsmoke_600"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="24dp"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Formulario de solicitud"
+            android:textColor="@color/woodsmoke_600"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="22dp"
+            android:layout_marginHorizontal="24dp"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Fotocopia de la cédula"
+            android:textColor="@color/woodsmoke_600"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="22dp"
+            android:layout_marginHorizontal="24dp"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Certificado Laboral"
+            android:textColor="@color/woodsmoke_600"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="22dp"
+            android:layout_marginHorizontal="24dp"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Tres últimos desprendibles de pago"
+            android:textColor="@color/woodsmoke_600"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="22dp"
+            android:layout_marginHorizontal="24dp"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Autorización de Tratamiento de Datos"
+            android:textColor="@color/woodsmoke_600"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="22dp"
+            android:layout_marginHorizontal="24dp"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*Todos los documentos deben ser autenticados"
+            android:textColor="@color/woodsmoke_800"
+            android:fontFamily="@font/sf_pro_semibold"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="22dp"
+            android:layout_marginHorizontal="24dp"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Hacer el envío de esta documentación a nuestras oficinas con dirección Cra. 11a #94a-31 Oficina 106 Bogotá, Colombia"
+            android:textColor="@color/woodsmoke_600"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/sf_pro"
+            android:layout_marginHorizontal="24dp"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Entran en un estudio de crédito de 6 días hábiles"
+            android:textColor="@color/woodsmoke_600"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginHorizontal="24dp"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. En caso de ser aprobado enviaremos al cliente el contrato de Términos y Condiciones. Este será firmado por el titular del crédito además de ser autenticado y ser enviado a nuestras oficinas con dirección Cra. 11a #94a-31 junto con un certificado bancario de la cuenta donde quiere que le sea girado el dinero, esta no debe ser mayor a 30 días, recordando que la cuenta donde vamos generar el desembolso debe estar a nombre del titular solicitante del crédito (no aplica Nequi, Daviplata o ahorro a la mano) 5 días hábiles"
+            android:textColor="@color/woodsmoke_600"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="24dp"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Para cualquier actualización de la información, el cliente deberá enviarla a través de una carta notariada a las oficinas de RAYO (este proceso puede tomar hasta 5 días hábiles)"
+            android:textColor="@color/woodsmoke_600"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="24dp"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="El proceso de Validación y Formalización del Desembolso es hasta 15 días hábiles para dar trámite al proceso"
+            android:textColor="@color/woodsmoke_600"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="24dp"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Importante: El envío de los documentos no constituye por sí mismo la aceptación de estos."
+            android:textColor="@color/woodsmoke_800"
+            android:fontFamily="@font/sf_pro_semibold"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="24dp"
+            android:textSize="14sp"
+            />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:backgroundTint="@color/Matisse_700"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Quiero mi crédito ya (Express)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_text_cargo"
+        />
+    <TextView
+        android:id="@+id/btn_close_days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quiero esperar los 15 días"
+        android:textColor="@color/Matisse_700"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/sf_pro_medium"
+        android:layout_marginHorizontal="24dp"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_close"
+        />
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

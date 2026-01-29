@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Matisse -->
+    <color name="Matisse_900">#00446F</color>
+    <color name="Matisse_800">#005991</color>
+    <color name="Matisse_700">#025FA3</color>
+    <color name="Matisse_600">#055FA2</color>
+    <color name="Matisse_500">#067DD4</color>
+    <color name="Matisse_200">#BCDFFB</color>
+    <color name="Matisse_100">#E1F0FD</color>
+    <color name="Matisse_50">#F0F8FF</color>
+
+    <!-- Calypso -->
+    <color name="calypso_800">#01738C</color>
+    <color name="calypso_600">#02A5D6</color>
+    <color name="calypso_500">#02AEE2</color>
+
+    <!-- Web Orange -->
+    <color name="web_orange_600">#FFA616</color>
+    <color name="web_orange_500">#EBB609</color>
+    <color name="web_orange_400">#FFC50A</color>
+    <color name="web_orange_50">#FFF7DB</color>
+
+    <!-- Woodsmoke -->
+    <color name="woodsmoke_900">#171717</color>
+    <color name="woodsmoke_800">#262626</color>
+    <color name="woodsmoke_700">#404040</color>
+    <color name="woodsmoke_600">#666666</color>
+    <color name="woodsmoke_500">#737373</color>
+    <color name="woodsmoke_400">#CBCBCB</color>
+    <color name="woodsmoke_300">#D4D4D4</color>
+    <color name="woodsmoke_200">#EFEFEF</color>
+
+    <!-- Pale Sky -->
+    <color name="pale_sky_500">#6C757D</color>
+    <color name="pale_sky_200">#F3F6FD</color>
+    <color name="pale_sky_100">#F8F9FA</color>
+    <color name="pale_sky_50">#FFFFFF</color>
+
+    <!-- Monza -->
+    <color name="monza_700">#D0021B</color>
+    <color name="monza_600">#EF4444</color>
+    <color name="monza_500">#F87171</color>
+    <color name="monza_400">#FCA5A5</color>
+    <color name="monza_300">#FECACA</color>
+    <color name="monza_200">#FEE2E2</color>
+
+    <!-- Flamingo -->
+    <color name="flamingo_600">#DF3A17</color>
+    <color name="flamingo_500">#EF5C2D</color>
+    <color name="flamingo_400">#F27645</color>
+    <color name="flamingo_300">#F6A57B</color>
+    <color name="flamingo_200">#FACAAE</color>
+    <color name="flamingo_100">#FDE7D7</color>
+
+    <!-- Mantis -->
+    <color name="mantis_600">#428927</color>
+    <color name="mantis_500">#57AD35</color>
+    <color name="mantis_400">#6CC346</color>
+    <color name="mantis_300">#9AD97D</color>
+    <color name="mantis_200">#C1E9AD</color>
+    <color name="mantis_100">#DFF4D3</color>
+
+    <color name="error_color">#ED3030</color>
+    <color name="cancelado">#C3F1E8</color>
+    <color name="border_filter">#EAEDF1</color>
+
+    <!-- estados -->
+    <color name="pendingBackground">#FFF7DB</color>
+    <color name="pendingText">#FFA616</color>
+    <color name="canceledBackground">#C3F1E8</color>
+    <color name="canceledText">#1E726C</color>
+    <color name="overdueBackground">#FEE2E2</color>
+    <color name="overdueText">#D0021B</color>
+</resources>

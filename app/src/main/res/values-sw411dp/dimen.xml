@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--normal size-->
+<resources>
+    <!--oboarding-->
+    <dimen name="margin_top_onboarding_img">46dp</dimen>
+    <dimen name="title_onboarding_text">20sp</dimen>
+    <dimen name="text_onboarding_text">14sp</dimen>
+    <dimen name="margin_top_onboarding_title">40dp</dimen>
+    <dimen name="margin_top_onboarding_steps">40dp</dimen>
+    <dimen name="margin_top_onboarding_button">12dp</dimen>
+    <!--login-->
+    <dimen name="margin_bottom_recover_password">40dp</dimen>
+</resources>

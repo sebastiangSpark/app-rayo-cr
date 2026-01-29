@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfilePersonalFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_background"
+        android:elevation="4dp"
+        >
+
+        <!-- Icono y Título -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="14sp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/ic_page"
+                android:contentDescription="personal_info_icon"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_info"
+                android:textColor="@color/Matisse_700"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/sf_pro_bold"/>
+        </LinearLayout>
+
+        <!-- Campos de información -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/woodsmoke_200"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="14dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/woodsmoke_600"
+            android:fontFamily="@font/sf_pro"
+             />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Camila"
+            android:textSize="14sp"
+            android:fontFamily="@font/sf_pro_semibold"
+            android:textColor="@color/woodsmoke_700"
+            android:layout_marginTop="4dp"
+            />
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/woodsmoke_200"
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="14dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/last_name"
+            android:fontFamily="@font/sf_pro"
+            android:textColor="@color/woodsmoke_600"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/user_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lopez Martínez"
+            android:textSize="14sp"
+            android:fontFamily="@font/sf_pro_semibold"
+            android:textColor="@color/woodsmoke_700"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/woodsmoke_200"
+        />
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="14dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/birth_date"
+            android:fontFamily="@font/sf_pro"
+            android:textColor="@color/woodsmoke_600"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/user_birthdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15 Marzo 1990"
+            android:textSize="14sp"
+            android:fontFamily="@font/sf_pro_semibold"
+            android:textColor="@color/woodsmoke_700"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/woodsmoke_200"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="14dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"
+            android:fontFamily="@font/sf_pro"
+            android:textColor="@color/woodsmoke_600"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/user_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="300 123 4567"
+            android:textSize="14sp"
+            android:fontFamily="@font/sf_pro_semibold"
+            android:textColor="@color/woodsmoke_700"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/woodsmoke_200"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="14dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:fontFamily="@font/sf_pro"
+            android:textColor="@color/woodsmoke_600"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="camila.lopez90@example.com"
+            android:textColor="@color/woodsmoke_700"
+            android:textSize="14sp"
+            android:fontFamily="@font/sf_pro_semibold"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

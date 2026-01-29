@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pale_sky_100">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:paddingHorizontal="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:layout_marginTop="20dp">
+
+            <!-- Primer Nombre -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Nombres*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/form_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:hint="ingrese su primer nombre"
+                android:inputType="text"
+                android:fontFamily="@font/sf_pro_medium"
+                android:textSize="14sp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp" />
+
+            <TextView
+                android:id="@+id/error_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/error_color"
+                android:visibility="gone"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                />
+
+            <!-- Apellido -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="24dp"
+                android:text="Apellidos*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_user_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:hint="Ingrese su apellido"
+                android:fontFamily="@font/sf_pro_medium"
+                android:inputType="text"
+                android:textSize="14sp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp" />
+
+            <TextView
+                android:id="@+id/error_user_lastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Cédula de Ciudadanía -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Número de cédula*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:layout_marginTop="24dp"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_user_document"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:hint="Ingrese su número de cédula"
+                android:inputType="number"
+                android:fontFamily="@font/sf_pro_medium"
+                android:textSize="14sp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp" />
+
+            <TextView
+                android:id="@+id/error_user_document"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Expiración documento -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Fecha de expiración de la cédula*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:layout_marginTop="24dp"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editTextDateDoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:hint="Ingrese fecha de expiración"
+                android:inputType="date"
+                android:textSize="14sp"
+                android:fontFamily="@font/sf_pro_medium"
+                android:textColorHint="@color/woodsmoke_300"
+                android:drawableEnd="@drawable/ic_date_picker"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:focusable="false"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/error_expire_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"
+                />
+
+            <!-- Fecha de nacimiento -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Fecha de nacimiento*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:layout_marginTop="24dp"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:hint="Seleccione su fecha de nacimiento"
+                android:inputType="date"
+                android:textSize="14sp"
+                android:fontFamily="@font/sf_pro_medium"
+                android:textColorHint="@color/woodsmoke_300"
+                android:drawableEnd="@drawable/ic_date_picker"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:focusable="false"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/error_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"
+                />
+
+            <!-- Género* -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Género*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:layout_marginTop="24dp"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/form_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:hint="Seleccione un genero"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:focusable="false"
+                android:inputType="none"
+                android:fontFamily="@font/sf_pro_medium"
+                android:maxLength="10"
+                android:textSize="14sp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp" />
+
+            <TextView
+                android:id="@+id/error_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Estado civil* -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Estado civil*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:layout_marginTop="24dp"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/form_civil_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:hint="Seleccione un estado civil"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:focusable="false"
+                android:inputType="none"
+                android:fontFamily="@font/sf_pro_medium"
+                android:maxLength="15"
+                android:textSize="14sp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp" />
+
+            <TextView
+                android:id="@+id/error_marital_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Número de celular* -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Número de celular*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:layout_marginTop="24dp"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/form_user_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:hint="Ingrese número de celular"
+                android:inputType="phone"
+                android:fontFamily="@font/sf_pro_medium"
+                android:maxLength="10"
+                android:textSize="14sp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp" />
+
+            <TextView
+                android:id="@+id/error_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Correo Electrónico -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Correo electrónico*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:layout_marginTop="24dp"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/form_user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:hint="Ingrese su correo electrónico"
+                android:fontFamily="@font/sf_pro_medium"
+                android:inputType="textEmailAddress"
+                android:textSize="14sp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp" />
+
+            <TextView
+                android:id="@+id/error_user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Contraseña -->
+            <TextView
+                android:id="@+id/user_password_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Contraseña*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/woodsmoke_700"
+                android:layout_marginTop="24dp"
+                android:textSize="12sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="Crea una contraseña"
+                app:endIconMode="password_toggle"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/form_password_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_input_background"
+                    android:hint="Crea una contraseña"
+                    android:inputType="textPassword"
+                    android:fontFamily="@font/sf_pro_medium"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="16dp"
+                    android:textColor="#000000"
+                    android:textColorHint="@color/woodsmoke_300"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/login_label_password" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/error_user_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <!-- Validar Correo Electrónico -->
+                <TextView
+                    android:id="@+id/user_validate_email_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="Validar correo electrónico*"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/woodsmoke_700"
+                    android:layout_marginTop="24dp"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/form_user_validate_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edit_text"
+                    android:hint="Reingresa tu correo"
+                    android:inputType="textEmailAddress"
+                    android:fontFamily="@font/sf_pro_medium"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/woodsmoke_300"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="16dp" />
+
+                <TextView
+                    android:id="@+id/error_validate_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/error_color"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    android:layout_marginTop="2dp"/>
+
+                <!-- ¿Eres empleado formal? -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="¿Eres empleado formal?*"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/woodsmoke_700"
+                    android:layout_marginTop="24dp"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/form_user_employe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edit_text"
+                    android:hint="Seleccione"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:fontFamily="@font/sf_pro_medium"
+                    android:inputType="none"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/woodsmoke_300"
+                    android:drawableEnd="@drawable/ic_arrow_down"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="16dp" />
+
+                <TextView
+                    android:id="@+id/error_user_employe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/error_color"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    android:layout_marginTop="2dp"/>
+
+                <!-- ¿Tienes cuenta bancaria a tu nombre? -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="¿Tienes cuenta bancaria a tu nombre?*"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/woodsmoke_700"
+                    android:layout_marginTop="24dp"
+                    android:textSize="12sp" />
+                <EditText
+                    android:id="@+id/form_user_have_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sf_pro_medium"
+                    android:background="@drawable/bg_edit_text"
+                    android:hint="Seleccione"
+                    android:drawableEnd="@drawable/ic_arrow_down"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:inputType="none"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/woodsmoke_300"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="16dp" />
+                <TextView
+                    android:id="@+id/error_user_have_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/error_color"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    android:layout_marginTop="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/checkbox_user_agree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/sf_pro"
+                        android:text="Autorizo "
+                        />
+                    <TextView
+                        android:id="@+id/textViewDataTreatment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="tratamiento de datos"
+                        android:fontFamily="@font/sf_pro_semibold"
+                        android:textColor="@color/Matisse_700"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/checkbox_user_terms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro"
+                        android:textSize="14sp"
+                        android:text="Autorizo "
+                        />
+                    <TextView
+                        android:id="@+id/textViewTermsAndConditions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="términos y condiciones"
+                        android:fontFamily="@font/sf_pro_semibold"
+                        android:textColor="@color/Matisse_700"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnNextStep"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingHorizontal="88dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/Matisse_700"
+                android:drawableEnd="@drawable/icon"
+                android:text="Guardar y continuar" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

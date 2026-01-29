@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.renewal.RenewalProposalFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <include
+                android:id="@+id/loan_proposal_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/loan_proposal_value"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="16dp"
+                />
+
+            <include
+                android:id="@+id/credit_detail_loan_proposal"
+                layout="@layout/credit_detail_loan_proposal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:background="@drawable/card_background">
+                <CheckBox
+                    android:id="@+id/checkbox_user_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/woodsmoke_700"
+                    android:fontFamily="@font/sf_pro"
+                    android:checked="true"
+                    android:text="Acepto "
+                    />
+                <TextView
+                    android:id="@+id/cargo_tecnology"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/sf_pro_semibold"
+                    android:text="Cargo de Tecnología"
+                    android:textColor="@color/Matisse_700"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/text_final_credit_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+                android:text="@string/final_text_credit_details"
+                android:textColor="@color/woodsmoke_700"
+                android:layout_marginTop="24dp"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/credit_detail" />
+
+            <Button
+                android:id="@+id/btnNextStepRenewal"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingHorizontal="88dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/Matisse_700"
+                android:drawableEnd="@drawable/icon"
+                android:text="Guardar y continuar" />
+
+            <EditText
+                android:id="@+id/form_need_help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:inputType="none"
+                android:focusable="false"
+                android:visibility="gone"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:fontFamily="@font/sf_pro_medium"
+                android:hint="Seleccione una opción"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/woodsmoke_300"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

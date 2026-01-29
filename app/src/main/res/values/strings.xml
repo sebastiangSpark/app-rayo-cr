@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name" translatable="false">Rayocredit</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_new">primer FRAGMENT</string>
+    <string name="open">abrir</string>
+    <string name="close">cerrar</string>
+    <!-- ONBOARDING -->
+    <string name="onboarding_title">¡Es bueno verte otra vez!</string>
+    <string name="onboarding_title_two">Confianza en cada paso</string>
+    <string name="onboarding_title_tree">Tu crédito, como lo necesitas</string>
+    <string name="onboarding_title_four">Estamos aquí para ayudarte</string>
+    <string name="onboarding_text">Inicia sesión y accede a soluciones financieras diseñadas para ti.</string>
+    <string name="onboarding_text_two">Tu tranquilidad es nuestra prioridad. En Rayo, protegemos tus datos con la tecnología más avanzada y te ofrecemos un proceso completamente transparente.</string>
+    <string name="onboarding_text_tree">Con nuestro simulador, personaliza el monto y las cuotas a tu medida. Toma el control de tus finanzas en tan solo unos clics, sin tanto papeleo ni largas esperas.</string>
+    <string name="onboarding_text_four">No estás solo en este camino. Nuestro equipo de expertos y herramientas inteligentes están listos para resolver tus dudas y acompañarte en cada paso.</string>
+    <string name="onboarding_next">Siguiente</string>
+    <string name="onboarding_skip">Omitir</string>
+    <!-- SELECT COUNTRY  -->
+    <string name="country_start">Comenzar</string>
+    <string name="country_title">Selecciona tu país</string>
+    <string name="country_text">Por favor, selecciona tu país. Esto nos ayudará a ofrecerte la mejor experiencia en Rayo.</string>
+    <!-- PROFILE  -->
+    <string name="personal_info">Información personal</string>
+    <string name="name">Nombre</string>
+    <string name="last_name">Apellidos</string>
+    <string name="birth_date">Fecha de nacimiento</string>
+    <string name="phone">Teléfono</string>
+    <string name="email">Correo electrónico</string>
+    <string name="bank_info">Información bancaria</string>
+    <string name="your_bank">Tu banco</string>
+    <string name="account_type">Tipo de cuenta</string>
+    <string name="account_number">Número de cuenta</string>
+    <!-- HOME  -->
+    <string name="home_header_text">Mis préstamos</string>
+    <string name="home_see_text">Ver todos</string>
+    <!-- HOME CARDS  -->
+    <string name="home_card_one">Aumento de cupo en tus siguientes renovaciones</string>
+    <string name="home_card_two">Línea de crédito hasta por $2.500.000 COP desde tu préstamo N° 13</string>
+    <!-- CREDIT DETAIL  -->
+    <string name="total_to_pay">Total a pagar</string>
+    <string name="credit_detail">Detalles de tu crédito</string>
+    <string name="interest">Interés</string>
+    <string name="interest_proposal">Interés</string>
+    <string name="subtotal">Sub total</string>
+    <string name="subtotal_proposal">Sub total</string>
+    <string name="technology">Tecnología (opcional)</string>
+    <string name="technology_proposal">Monto tecnología bruto (opcional)</string>
+    <string name="technology_net">Monto tecnología neto</string>
+    <string name="IVAtechnology">IVA de Tecnología 19%</string>
+    <string name="bond">Fianza (CONFÉ) + IVA</string>
+    <string name="proposal_total_payment">Total a pagar</string>
+    <string name="proposal_total_disbursement">Total a desembolsar</string>
+    <string name="suggested_value">Valor sugerido</string>
+    <string name="discount">Descuentos</string>
+    <string name="final_text_credit_details">Si incurres en mora, se aplicará la tasa del 24,92%% EA sobre el valor en mora. El valor de intereses de mora será el máximo permitido más los gastos de cobranza que apliquen según T&amp;C.</string>
+    <string name="payments">Abonos</string>
+    <string name="open_drawer">Abrir menú</string>
+    <string name="close_drawer">Cerrar menú</string>
+    <!-- Tipos de cuentas bancarias - BankInfoFormFragment -->
+    <string-array name="bank_account_type_options">
+        <item>Seleccione su tipo de cuenta</item>
+        <item>Ahorros</item>
+        <item>Corriente</item>
+    </string-array>
+    <!-- Número Whatsapp -->
+    <string name="contact_number_colombia">573169197373</string>
+    <string name="contact_message">¡Hola! Requiero conversar con un asesor.</string>
+    <!-- Alerts créditos -->
+    <string name="interest_info_title">Intereses</string>
+    <string name="technology_info_title">Tecnología</string>
+    <string name="iva_info_title">IVA de tecnología</string>
+
+    <string name="interest_info_content">Es el índice utilizado para medir el costo de tu crédito. La tasa de interés cobrada por RAYO en todos tus créditos es del 24,92% E.A (Efectivo Anual).</string>
+    <string name="technology_info_content">Este cargo abre las puertas de toda nuestra plataforma y sus beneficios. Es opcional, pero aceptarlo es obtener los servicios adicionales a los canales tradicionales para el manejo de tu cupo de crédito. Cambias las filas, los turnos y los papeleos, por un servicio simple, rápido y 100% digital. Además, obtener descuentos y descargar cupones de nuestras marcas aliadas.</string>
+    <string name="iva_info_content">Nuestro aliado Fondo de Garantías (CONFÉ) respalda tu crédito en caso de ser aprobado. Este respaldo es un requisito para contar con tu desembolso y nos garantiza el pago de tu obligación en caso de un incumplimiento de tu parte, situación en la que el CONFÉ pasaría a ser tu nuevo acreedor. Por lo tanto, el cobro y el reporte ante centrales de riesgo sería directamente con CONFÉ. El valor de la fianza en tu primer préstamo no superará el 5% y después dependerá de tu comportamiento de pago. Este monto más el IVA, será descontado de tu desembolso, para poder otorga tu préstamo.</string>
+    <!--Renovación-->
+    <string name="proposal_bold_text">Entendemos que esperabas un préstamo de mayor monto.
+        En <b>RAYO</b> queremos conocerte mejor, por lo que te proponemos este valor aprobado</string>
+    <string name="years" translatable="false">años</string>
+
+    <!--Error messages-->
+    <string name="error_minimum_characters" translatable="false">Se requiere como mínimo 8 caracteres</string>
+    <string name="error_minimum_one_number" translatable="false">Contener mínimo un número</string>
+    <string name="error_minimum_one_uppercase" translatable="false">Contener al menos una letra mayúscula</string>
+    <string name="error_minimum_one_lowercase" translatable="false">Contener al menos una letra minúscula</string>
+    <string name="error_minimum_one_symbol" translatable="false">La contraseña debe contener al menos un carácter especial (! @ # $ % ^ &amp; * ( ) _ - + = { } [ ] : ; , . ?)</string>
+    <string name="error_empty_date" translatable="false">Por favor, seleccione su fecha de nacimiento</string>
+    <string name="error_minimum_age" translatable="false">Debe ser mayor de</string>
+    <string name="error_invalid_date" translatable="false">Fecha de nacimiento inválida</string>
+    <string name="error_empty_phone" translatable="false">Por favor, ingrese su número de celular</string>
+    <string name="error_invalid_phone" translatable="false">Por favor, ingrese un número de celular válido (8 dígitos)</string>
+
+</resources>

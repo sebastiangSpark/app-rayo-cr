@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayoutHome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:id="@+id/mainActivityScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/backgroundImage"
+                android:layout_width="match_parent"
+                android:layout_height="153dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_blue_login"
+                app:layout_constraintEnd_toEndOf="@id/container_scrollview"
+                app:layout_constraintStart_toStartOf="@id/container_scrollview"
+                app:layout_constraintTop_toTopOf="@id/container_scrollview" />
+
+            <LinearLayout
+                android:id="@+id/container_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/container_scrollview"
+                app:layout_constraintStart_toStartOf="@id/container_scrollview"
+                app:layout_constraintTop_toTopOf="@id/container_scrollview" />
+
+            <LinearLayout
+                android:id="@+id/container_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/container_toolbar">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/home_header_text"
+                    android:textColor="@color/pale_sky_50"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/sf_pro_bold" />
+
+                <Button
+                    android:id="@+id/button_see_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/arrow_right"
+                    android:padding="1dp"
+                    android:text="@string/home_see_text"
+                    android:fontFamily="@font/sf_pro_semibold"
+                    android:textColor="@color/pale_sky_50"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_card_loan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/container_text">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardLoanInactive"
+                    android:layout_width="match_parent"
+                    android:layout_height="174dp"
+                    android:layout_marginHorizontal="24dp"
+                    app:cardCornerRadius="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sf_pro"
+                            android:text="No tienes préstamos activos"
+                            android:textColor="@color/pale_sky_500"
+                            android:textSize="14sp"
+                            android:layout_weight="1"
+                            android:gravity="center"/>
+
+                        <Button
+                            android:id="@+id/first_button_loan_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/Matisse_700"
+                            android:drawableEnd="@drawable/arrow_right"
+                            android:fontFamily="@font/sf_pro_medium"
+                            android:textSize="14sp"
+                            android:paddingEnd="60dp"
+                            android:paddingStart="46dp"
+                            android:text="Obtén tu primer préstamo" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardLoanInactiveButtonLess"
+                    android:layout_width="match_parent"
+                    android:layout_height="174dp"
+                    android:visibility="gone"
+                    android:layout_marginHorizontal="24dp"
+                    app:cardCornerRadius="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tu próximo préstamo te espera"
+                            android:textColor="@color/Matisse_600"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/sf_pro_bold"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Tienes disponible opciones de renovación, elige la que mejor se adapte a ti y continúa avanzando con Rayo."
+                            android:textColor="@color/pale_sky_500"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="48dp"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/sf_pro"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--                <include
+                    android:id="@+id/cardLayout"
+                    layout="@layout/fragment_principal_card_loan"
+                    android:visibility="gone" />-->
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPagerPrincipalCards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                    android:id="@+id/principal_dots_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="8dp"
+                    app:dotsColor="@color/woodsmoke_300"
+                    app:dotsCornerRadius="8dp"
+                    app:dotsSize="10dp"
+                    app:dotsSpacing="4dp"
+                    app:dotsWidthFactor="2.3"
+                    app:progressMode="false"
+                    app:selectedDotColor="@color/Matisse_700" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_quick_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/container_card_loan">
+
+                <TextView
+                    android:id="@+id/text_quick_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Acciones rápidas"
+                    android:fontFamily="@font/sf_pro_semibold"
+                    android:textColor="@color/woodsmoke_700"
+                    android:textSize="14sp"/>
+
+                <include
+                    android:layout_gravity="center"
+                    android:id="@+id/quickActionCardLayout"
+                    layout="@layout/quick_actions_cards"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_benefit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/sf_pro_semibold"
+                android:text="Beneficios para ti"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/container_quick_action" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_benefit">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewCards"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:overScrollMode="never"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/text_finance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/sf_pro_semibold"
+                android:text="Finanzas Inteligentes"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/container_slider" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_finance_slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_finance">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewFinanceCards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:overScrollMode="never"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view_home"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:layout_marginTop="38dp"
+        android:fitsSystemWindows="true"
+        android:paddingTop="40dp"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.loan.BankInfoFormFragment"
+    >
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Primer Nombre -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Departamento*"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <!--            <Spinner
+                android:id="@+id/form_department"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:inputType="text"
+                android:textSize="14sp"
+                android:textColor="@color/woodsmoke_700"
+                android:textColorHint="@color/woodsmoke_300"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:spinnerMode="dialog"/>-->
+
+            <EditText
+                android:id="@+id/form_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:focusable="false"
+                android:hint="Seleccione un departamento"
+                android:inputType="none"
+                android:fontFamily="@font/sf_pro_medium"
+                android:textSize="14sp"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp" />
+
+            <TextView
+                android:id="@+id/error_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Apellido -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="24dp"
+                android:text="Ciudad*"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/form_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:hint="Seleccione una ciudad"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="none"
+                android:fontFamily="@font/sf_pro_medium"
+                android:textSize="14sp"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp" />
+<!--            <Spinner
+                android:id="@+id/form_city"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:inputType="text"
+                android:textSize="14sp"
+                android:textColor="@color/woodsmoke_700"
+                android:textColorHint="@color/woodsmoke_300"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:spinnerMode="dialog"/>-->
+
+            <TextView
+                android:id="@+id/error_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Cédula de Ciudadanía -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="24dp"
+                android:text="Dirección exacta*"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/form_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:hint="Ingrese su direccion de residencia"
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="none"
+                android:fontFamily="@font/sf_pro_medium"
+                android:textSize="14sp"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp" />
+
+            <TextView
+                android:id="@+id/error_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="24dp"
+                android:text="Cuál es tu banco?*"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+             <EditText
+                android:id="@+id/form_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:hint="Seleccione su banco"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                 android:focusable="false"
+                 android:clickable="true"
+                 android:inputType="none"
+                 android:fontFamily="@font/sf_pro_medium"
+                 android:textSize="14sp"
+                 android:paddingHorizontal="12dp"
+                 android:paddingVertical="16dp" />
+
+<!--            <Spinner
+                android:id="@+id/form_bank"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:inputType="text"
+                android:textSize="14sp"
+                android:textColor="@color/woodsmoke_700"
+                android:textColorHint="@color/woodsmoke_300"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:spinnerMode="dialog"/>-->
+
+            <TextView
+                android:id="@+id/error_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"/>
+            <!-- Espaciado -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="24dp" />
+
+            <!-- Teléfono -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Tipo de cuenta*"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/form_type_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:hint="Seleccione su tipo de cuenta"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="none"
+                android:fontFamily="@font/sf_pro_medium"
+                android:textSize="14sp"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp" />
+
+            <TextView
+                android:id="@+id/error_type_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Cuenta bancaria -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="24dp"
+                android:text="Número de cuenta*"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/form_number_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:hint="Ingrese el número de cuenta bancaria"
+                android:inputType="number"
+                android:importantForAutofill="no"
+                android:maxLength="12"
+                android:fontFamily="@font/sf_pro_medium"
+                android:textSize="14sp"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp" />
+
+            <TextView
+                android:id="@+id/error_account_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Verificar cuenta bancaria -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="24dp"
+                android:text="Verifica tu número de cuenta*"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <EditText
+                android:id="@+id/form_verify_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/bg_edit_text"
+                android:hint="Ingresa de nuevo su número de cuenta"
+                android:inputType="number"
+                android:importantForAutofill="no"
+                android:maxLength="12"
+                android:fontFamily="@font/sf_pro_medium"
+                android:textSize="14sp"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:longClickable="false"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/error_verify_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"/>
+
+            <Button
+                android:id="@+id/btnNextStep"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingHorizontal="88dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/Matisse_700"
+                android:drawableEnd="@drawable/icon"
+                android:text="Guardar y continuar" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

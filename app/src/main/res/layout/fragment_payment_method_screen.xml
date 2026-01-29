@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ui.loan.PaymentMethodScreenFragment">
+
+    <ScrollView
+        android:id="@+id/container_scroll_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title_payment_method"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_bold"
+                    android:text="¡Importante!"
+                    android:textAlignment="center"
+                    android:textColor="@color/Matisse_700"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/container_text_payment_method_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title_payment_method">
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/sf_pro"
+                        android:text="Nuestro objetivo es ayudarte a estar al día con tus pagos y disfrutar de todos los beneficios que RAYO tiene para ti"
+                        android:textSize="14sp"
+
+                        />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/sf_pro"
+                        android:text="Para hacerlo, te ofrecemos dos opciones sencillas:"
+                        android:textSize="14sp"
+
+                        />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/sf_pro"
+                        android:text="Opción 1 Débito automático: Elimina el estrés de recordar  fechas de pago al programar tu débito automático."
+                        android:textSize="14sp" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/sf_pro"
+                        android:text="El débito automático se realizará en las fechas de pago que seleccionaste. Por favor, asegúrate de contar siempre con el saldo disponible en tu cuenta bancaria."
+                        android:textSize="14sp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/sf_pro"
+                        android:text="Opción 2 Pago medios voluntarios: Si en los siguientes 2 días hábiles tu pago NO se ve reflejado, RAYO activará el débito automático para cancelar la cuota pendiente."
+                        android:textSize="14sp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/sf_pro"
+                        android:text="ACLARACIÓN: Te damos 2 días hábiles desde tu fecha programada de pago para cancelar tu deuda. Si tu pago no se ve reflejado, RAYO se reserva el derecho a debitarte de forma automática en tus fechas de pago siguientes."
+                        android:textSize="14sp"
+
+                        />
+
+                </LinearLayout>
+                <!--    <View
+                        android:id="@+id/view_payment_method_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintVertical_weight="1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/container_text_payment_method_screen"/>-->
+                <EditText
+                    android:id="@+id/dialog_payment_method_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edit_text"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_arrow_down"
+                    android:focusable="false"
+                    android:fontFamily="@font/sf_pro_medium"
+                    android:hint="Débito Automático"
+                    android:inputType="none"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="16dp"
+                    android:textColorHint="@color/woodsmoke_900"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/container_text_payment_method_screen" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnNextStep"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:backgroundTint="@color/Matisse_700"
+                android:drawableEnd="@drawable/icon"
+                android:paddingHorizontal="88dp"
+                android:text="Continuar" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

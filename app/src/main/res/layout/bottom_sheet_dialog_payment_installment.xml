@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_pay_installment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Pago de cuota"
+        android:textColor="@color/woodsmoke_600"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        app:dividerColor="@color/woodsmoke_300"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_pay_installment" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider">
+
+        <LinearLayout
+            android:id="@+id/type_loan_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider">
+
+            <TextView
+                android:id="@+id/text_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/sf_pro_semibold"
+                android:text="Tipo de préstamo"
+                android:textColor="@color/woodsmoke_800"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/text_value_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/sf_pro"
+                android:gravity="end"
+                android:text="Rayo plus"
+                android:textColor="@color/woodsmoke_800" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/installment_loan_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/type_loan_container">
+
+            <TextView
+                android:id="@+id/text_installment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/sf_pro_semibold"
+                android:text="Cuotas"
+                android:textColor="@color/woodsmoke_800"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/text_value_installment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/sf_pro"
+                android:gravity="end"
+                android:text="3"
+                android:textColor="@color/woodsmoke_800" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/installment_pending_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/installment_loan_container">
+
+            <TextView
+                android:id="@+id/text_installment_pending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/sf_pro_semibold"
+                android:text="Cuotas por pagar"
+                android:textColor="@color/woodsmoke_800"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/text_value_installment_pending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/sf_pro"
+                android:gravity="end"
+                android:text="2"
+                android:textColor="@color/woodsmoke_800" />
+        </LinearLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/dividerTwo"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="8dp"
+            app:dividerColor="@color/woodsmoke_300"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/installment_pending_container" />
+
+        <LinearLayout
+            android:id="@+id/installment_pay_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dividerTwo">
+
+            <TextView
+                android:id="@+id/text_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/sf_pro_semibold"
+                android:text="Pago"
+                android:textColor="@color/woodsmoke_800"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/text_value_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/sf_pro"
+                android:gravity="end"
+                android:text="P-644034"
+                android:textColor="@color/woodsmoke_800" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/installment_date_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/installment_pay_container">
+
+            <TextView
+                android:id="@+id/text_date_installment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/sf_pro_semibold"
+                android:text="Fecha de pago oportuno"
+                android:textColor="@color/woodsmoke_800"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/text_value_date_installment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/sf_pro"
+                android:gravity="end"
+                android:text="Enero 31, 2025"
+                android:textColor="@color/woodsmoke_800" />
+        </LinearLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/dividerTree"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="8dp"
+            app:dividerColor="@color/woodsmoke_300"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/installment_date_container" />
+
+        <LinearLayout
+            android:id="@+id/amount_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dividerTree">
+
+            <TextView
+                android:id="@+id/text_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/sf_pro_semibold"
+                android:text="Monto a pagar"
+                android:textColor="@color/woodsmoke_800"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/text_value_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/sf_pro"
+                android:gravity="end"
+                android:text="$252,783.75"
+                android:textColor="@color/woodsmoke_800" />
+        </LinearLayout>
+
+        <!-- Botón para acción futura -->
+        <Button
+            android:id="@+id/buttonAction"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="0dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/Matisse_700"
+            android:text="Pagar"
+            android:textColor="@color/pale_sky_50"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/amount_container" />
+
+        <!-- Botón para cerrar -->
+        <Button
+            android:id="@+id/buttonClose"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="0dp"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            app:strokeColor="@color/Matisse_700"
+            android:textColor="@color/Matisse_700"
+            android:backgroundTint="@color/pale_sky_50"
+            android:text="Cerrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonAction" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

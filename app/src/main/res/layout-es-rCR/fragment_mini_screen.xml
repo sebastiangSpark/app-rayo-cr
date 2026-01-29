@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.info.loanTypesScreen.MiniScreenFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="102dp"
+        android:scrollbars="none"
+        >
+    <LinearLayout
+        android:id="@+id/optionsTerms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/sf_pro_bold"
+            android:text="Mini Préstamos"
+            android:textColor="@color/Matisse_900"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_bold"
+            android:layout_marginTop="24dp"
+            android:text="¿Qué es un Mini Préstamo en Rayo?"
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/terms_conditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro"
+            android:layout_marginTop="16dp"
+            android:text="En el mundo de las finanzas tecnológicas en Rayo, un Mini Préstamo es conocido como una opción de crédito que se caracteriza por ofrecer montos de dinero menores en comparación con los préstamos tradicionales que se podrían obtener a través de un banco. Este tipo de préstamo es una solución de financiamiento a corto plazo dirigida, por lo general, a aquellos que necesitan acceso rápido a capital para cubrir gastos emergentes o pequeñas necesidades económicas."
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_bold"
+            android:layout_marginTop="16dp"
+            android:text="Características y Beneficios de los Mini Préstamos en las Rayo"
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_bold"
+            android:text="Agilidad y Sencillez"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro"
+            android:layout_marginTop="16dp"
+            android:text="En Rayo hemos transformado el acceso al crédito, haciendo que el proceso de solicitud de un Mini Préstamo sea rápido y sencillo. todo el procedimiento se puede realizar online, desde la comodidad de tu hogar, con mínimos requisitos y sin la necesidad de largas esperas o papeleo."
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_bold"
+            android:text="Montos Personalizados"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro"
+            android:layout_marginTop="16dp"
+            android:text="Los Mini Préstamos en Rayo ofrecen montos que pueden ser menores a los proporcionados por las entidades bancarias, los cuales son ideales para solventar necesidades financieras específicas sin tener que comprometerse con una deuda grande."
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_bold"
+            android:text="Respuesta Inmediata"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro"
+            android:layout_marginTop="16dp"
+            android:text="Gracias a las tecnologías de procesamiento y análisis de datos, en Rayo somos capaces de ofrecer respuestas casi inmediatas a las solicitudes de préstamo, permitiendo a los solicitantes saber en cuestión de minutos si su financiamiento fue aprobado."
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro"
+            android:layout_marginTop="16dp"
+            android:text="Los Mini Préstamos en Rayo representan, por tanto, una alternativa moderna al financiamiento personal clásico que ofrece ventajas en términos de rapidez, conveniencia y accesibilidad, orientadas hacia una sociedad donde la eficiencia y la adaptabilidad son esenciales."
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileAddressFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_background"
+        android:elevation="4dp">
+
+        <!-- Icono y Título -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="14dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/ic_addres_profile"
+                android:contentDescription="personal_info_icon"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Información de ubicación"
+                android:textColor="@color/Matisse_700"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/sf_pro_bold"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/woodsmoke_200"
+            />
+
+        <!-- Campos de información -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="14dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="País"
+                android:fontFamily="@font/sf_pro"
+                android:textColor="@color/woodsmoke_600"
+                />
+
+            <TextView
+                android:id="@+id/user_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Costa Rica"
+                android:textSize="14sp"
+                android:fontFamily="@font/sf_pro_semibold"
+                android:textColor="@color/woodsmoke_700"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/woodsmoke_200"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="14dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Provincia"
+                android:fontFamily="@font/sf_pro"
+                android:textColor="@color/woodsmoke_600"
+                />
+
+            <TextView
+                android:id="@+id/user_account_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cartago"
+                android:textSize="14sp"
+                android:fontFamily="@font/sf_pro_semibold"
+                android:textColor="@color/woodsmoke_700"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/woodsmoke_200"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="14dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cantón"
+                android:fontFamily="@font/sf_pro"
+                android:textColor="@color/woodsmoke_600"
+                />
+
+            <TextView
+                android:id="@+id/user_account_canton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="El Guarco"
+                android:textSize="14sp"
+                android:fontFamily="@font/sf_pro_semibold"
+                android:textColor="@color/woodsmoke_700"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/woodsmoke_200"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="14dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Distrito"
+                android:fontFamily="@font/sf_pro"
+                android:textColor="@color/woodsmoke_600"
+                />
+
+            <TextView
+                android:id="@+id/user_account_distrito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="El Tejar"
+                android:textSize="14sp"
+                android:fontFamily="@font/sf_pro_semibold"
+                android:textColor="@color/woodsmoke_700"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/woodsmoke_200"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="14dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ubicación exacta"
+                android:fontFamily="@font/sf_pro"
+                android:textColor="@color/woodsmoke_600"
+                />
+
+            <TextView
+                android:id="@+id/user_account_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="santa fe, costa rica, santa marta casa azul, a la esquina de la casa"
+                android:textSize="14sp"
+                android:fontFamily="@font/sf_pro_semibold"
+                android:textColor="@color/woodsmoke_700"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

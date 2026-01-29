@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    app:cardBackgroundColor="@color/pale_sky_50"
+    app:cardCornerRadius="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.dialogs.BankDialogFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        >
+    <ImageView
+        android:id="@+id/img_dialog_bank"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_money_dialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/title_dialog_bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Confirmar desembolso"
+        android:textSize="20sp"
+        android:fontFamily="@font/sf_pro_bold"
+        android:textColor="@color/woodsmoke_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_dialog_bank"/>
+    <TextView
+        android:id="@+id/text_dialog_bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu dinero llegará a la siguiente cuenta bancaria"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/sf_pro"
+        android:textColor="@color/woodsmoke_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_dialog_bank"/>
+
+    <!--<LinearLayout
+        android:id="@+id/container_text_dialog_bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa algo"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_dialog_bank">-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_text_dialog_bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa algo"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_dialog_bank">
+        <TextView
+            android:id="@+id/tvBankLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Banco: "
+            android:textAlignment="textStart"
+            android:textSize="14sp"
+            android:fontFamily="@font/sf_pro"
+            android:textColor="@color/woodsmoke_700"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tvBankName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:fontFamily="@font/sf_pro_bold"
+            android:textColor="@color/woodsmoke_700"
+            app:layout_constraintStart_toEndOf="@id/tvBankLabel"
+            app:layout_constraintTop_toTopOf="@id/tvBankLabel"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvAccountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cuenta: "
+            android:textSize="14sp"
+            android:textAlignment="textStart"
+            android:fontFamily="@font/sf_pro"
+            android:textColor="@color/woodsmoke_700"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvBankLabel"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+            android:id="@+id/tvAccountNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:fontFamily="@font/sf_pro_bold"
+            android:textColor="@color/woodsmoke_700"
+            app:layout_constraintStart_toEndOf="@id/tvAccountLabel"
+            app:layout_constraintTop_toBottomOf="@id/tvBankName"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/container_buttons_dialog_bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:gravity="end"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_text_dialog_bank">
+        <TextView
+            android:id="@+id/btn_back_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:gravity="end"
+            android:textSize="12sp"
+            android:fontFamily="@font/sf_pro_medium"
+            android:textColor="@color/Matisse_700"
+            android:text="Regresar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/container_text_dialog_bank"/>
+        <TextView
+            android:id="@+id/btn_submit_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmar"
+            android:textSize="12sp"
+            android:layout_marginLeft="8dp"
+            android:padding="12dp"
+            android:fontFamily="@font/sf_pro_medium"
+            android:gravity="end"
+            android:textColor="@color/Matisse_700"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/container_text_dialog_bank"/>
+    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

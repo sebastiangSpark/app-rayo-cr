@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Cuenta IBAN* -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Cuenta IBAN*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/form_number_account_IBAN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:hint="Ingrese su cuenta IBAN"
+                android:inputType="text"
+                android:maxLength="22"
+                android:paddingStart="12dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="16dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_account_number_IBAN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Moneda* -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Moneda*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/form_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:focusable="false"
+                android:hint="Seleccione una moneda"
+                android:inputType="none"
+                android:paddingStart="12dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="16dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Salario Mensual* -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Salario Mensual*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/form_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:hint="₡0,00"
+                android:inputType="number"
+                android:maxLength="9"
+                android:paddingStart="12dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="16dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Actividad económica* -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Actividad económica*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/form_activity_economic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:focusable="false"
+                android:hint="Seleccione su actividad económica"
+                android:inputType="none"
+                android:paddingStart="12dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="16dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_activity_economic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Profesión* -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Profesión*"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/form_profesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:focusable="false"
+                android:hint="Seleccione una profesión"
+                android:inputType="none"
+                android:paddingStart="12dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="16dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_profesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- ¿Como te gustaría que RAYO premiara tu fidelidad? -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="¿Como te gustaría que RAYO premiara tu fidelidad?"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/form_happiness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:focusable="false"
+                android:hint="Seleccione una opción"
+                android:inputType="none"
+                android:paddingStart="12dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="16dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/error_happiness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!--CheckCCSS-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="¿Cotizas para la CCSS? (Orden Patronal) *"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupCCSS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbCcssYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:id="@+id/rbCcssNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/errorCcss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!--Check Referer-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="¿Fuiste referido por alguien? *"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupReferrer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbRefererYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:id="@+id/rbRefererNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/errorReferer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/llReferer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!--Cedula referido-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Cedula o Código del Referido *"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/formRefererCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edit_text"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:hint="Cédula de la persona que te refirió"
+                    android:inputType="number"
+                    android:paddingStart="12dp"
+                    android:paddingTop="16dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="16dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/errorRefererCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/error_color"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <!--NameReferer-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Nombre del Referido *"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/formRefererName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edit_text"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:hint="Nombre de la persona que te refirió"
+                    android:inputType="text"
+                    android:paddingStart="12dp"
+                    android:paddingTop="16dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="16dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/errorRefererName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/error_color"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <!-- Error general-->
+            <TextView
+                android:id="@+id/error_general"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnNextStep"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/Matisse_700"
+                android:drawableEnd="@drawable/icon"
+                android:paddingHorizontal="88dp"
+                android:text="Guardar y continuar" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

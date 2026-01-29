@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@color/pale_sky_50"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="24dp"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="32dp">
+
+
+    <TextView
+        android:id="@+id/text_rejected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Lo sentimos!"
+        android:textSize="20sp"
+        android:fontFamily="@font/sf_pro_bold"
+        android:textColor="@color/Matisse_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/text_rejected_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Actualmente no puedes acceder a ninguno de nuestros préstamos."
+        android:textSize="14sp"
+        android:fontFamily="@font/sf_pro"
+        android:textColor="@color/woodsmoke_800"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_rejected"/>
+    <TextView
+        android:id="@+id/text_rejected_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Pero te hacemos algunas sugerencias para mejorar su score crediticio:"
+        android:textSize="14sp"
+        android:fontFamily="@font/sf_pro"
+        android:textColor="@color/woodsmoke_800"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_rejected_first"/>
+
+    <LinearLayout
+        android:id="@+id/container_reject_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_rejected_second">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rejected_mail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_rejected"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Ser puntual en tus pagos, con otras entidades financieras."
+            android:textSize="14sp"
+            android:fontFamily="@font/sf_pro"
+            android:textColor="@color/woodsmoke_800" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/container_reject_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_reject_mail">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rejected_phone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_rejected"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Pagar a tiempo tu plan de celular o equipo a cuotas."
+            android:textSize="14sp"
+            android:fontFamily="@font/sf_pro"
+            android:textColor="@color/woodsmoke_800" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/container_reject_document"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_reject_phone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rejected_document"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_rejected"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Ponerte al día en tus cuotas atrasadas de otros creditos."
+            android:textSize="14sp"
+            android:fontFamily="@font/sf_pro"
+            android:textColor="@color/woodsmoke_800" />
+    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

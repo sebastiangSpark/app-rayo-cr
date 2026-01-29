@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.info.loanTypesScreen.PlusScreenFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="102dp"
+        android:scrollbars="none"
+        >
+    <LinearLayout
+        android:id="@+id/options_acceptance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="visible"
+        app:cornerRadius="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_bold"
+            android:textAlignment="center"
+            android:text="Crédito Rayo Plus"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/Matisse_900"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_bold"
+            android:text="Características Principales del Crédito Rayo Plus"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro"
+            android:layout_marginTop="16dp"
+            android:text="Crédito Rayo Plus ofrece a nuestros clientes leales la oportunidad de acceder a cantidades de financiamiento más significativas, recompensando su responsabilidad y compromiso."
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro"
+            android:layout_marginTop="16dp"
+            android:text="Si has demostrado ser un cliente confiable cumpliendo con tus pagos oportunos en nuestros mini préstamos, Crédito Rayo Plus es el siguiente nivel pensado para ti."
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro"
+            android:layout_marginTop="16dp"
+            android:text="Montos mayores: Accede a una cantidad de crédito superior para abarcar necesidades financieras más grandes.
+Confianza remunerada: Reconocemos tu historial impecable con mayores límites de préstamo.
+Proceso simplificado: Si ya eres cliente, el proceso de solicitud es aún más rápido y sencillo."
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/sf_pro"
+            android:text="Los créditos responsables abren puertas a mayores oportunidades en Crédito Rayo Plus."
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_bold"
+            android:text="Público Objetivo"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro"
+            android:text="Crédito Rayo Plus está diseñado específicamente para aquellos clientes que han construido un historial positivo con nosotros a través de nuestros mini créditos. Estamos comprometidos con el apoyo continuo a nuestros usuarios destacados, premiando su fidelidad y puntualidad. Si te has mantenido al día con tus pagos y estás en busca de mayor financiamiento, este producto es para ti."
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

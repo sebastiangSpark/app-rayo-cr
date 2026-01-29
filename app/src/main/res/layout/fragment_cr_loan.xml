@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CR.ui.loan.CrLoanFragment">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <include
+                android:id="@+id/loan_value"
+                android:layout_width="match_parent"
+                android:layout_height="274dp"
+                layout="@layout/cr_loan_value"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="16dp"
+                />
+
+            <include
+                android:id="@+id/credit_detail"
+                layout="@layout/cr_credit_detail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/text_final_credit_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/final_text_credit_details"
+                    android:textColor="@color/woodsmoke_700"
+                    android:textSize="12sp"
+                    android:layout_marginHorizontal="28dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/credit_detail" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/credit_navigate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="¡Solicita tu crédito Ya!"
+                android:backgroundTint="@color/Matisse_700"
+                android:maxLines="1"
+                android:paddingHorizontal="77dp"
+                android:includeFontPadding="true"
+                android:minWidth="200dp"
+                android:drawableEnd="@drawable/arrow_right"
+                android:paddingVertical="15dp"
+                android:drawablePadding="40dp"
+                />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

@@ -1,0 +1,131 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    tools:openDrawer="end"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rootView"
+        >
+
+        <!-- Toolbar -->
+        <LinearLayout
+            android:id="@+id/container_toolbars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include
+                android:id="@+id/toolbar_menu"
+                layout="@layout/toolbar_menu"
+                android:paddingTop="38dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <include
+                android:id="@+id/toolbar_profile"
+                layout="@layout/toolbar_profile"
+                android:paddingTop="38dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <include
+                android:id="@+id/toolbar_personal_profile"
+                layout="@layout/toolbar_personal_profile"
+                android:paddingTop="38dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <include
+                android:id="@+id/toolbar_layout"
+                layout="@layout/toolbar_layout"
+                android:paddingTop="38dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+
+        <!-- NavHostFragment -->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/navHostFragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/pale_sky_100"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toTopOf="@id/bottomNavViewLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/container_toolbars"
+            app:navGraph="@navigation/main_graph" />
+
+        <!-- BottomNavigationView -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavViewLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/pale_sky_50"
+            app:itemIconTint="@color/botton_nav_selector"
+            app:itemTextColor="@color/bottom_nav_text_selector"
+            app:itemBackground="@drawable/bottom_nav_item_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/CustomBottomNavigationView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_navigation_menu"
+            app:labelVisibilityMode="labeled"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- NavigationView (Drawer) -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingTop="40dp"
+        android:layout_marginTop="38dp"
+        app:headerLayout="@layout/nav_header"
+        android:animateLayoutChanges="false"
+        android:layout_gravity="end"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/nav_menu"
+        app:itemVerticalPadding="14dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Menú principal -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <!-- Item fijo en la parte inferior -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/nav_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconSize="26dp"
+                android:padding="40dp"
+                android:gravity="center_vertical"
+                android:text="Cerrar sesión"
+                android:textColor="@color/woodsmoke_600"
+                app:icon="@drawable/ic_logout"
+                android:background="?attr/selectableItemBackground"/>
+        </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

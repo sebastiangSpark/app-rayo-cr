@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.loan.AddressInfoFormFragment">
+
+    <ScrollView
+        android:id="@+id/container_scroll_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+    <LinearLayout
+        android:id="@+id/container_layout_address_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Matisse_600"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="58dp"
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back_toolbar_address_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Ícono"
+            android:padding="8dp"
+            android:src="@drawable/arrow_left"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/toolbar_layout_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Solicitud de préstamo"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/sf_pro_bold" />
+            <TextView
+                android:id="@+id/toolbar_layout_address_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dirección Exacta"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/sf_pro"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/toolbar_layout_icon_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Ícono"
+            android:padding="8dp"
+            android:src="@drawable/ic_exclamation" />
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/container_form_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/container_layout_address_toolbar">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Vía*"
+                android:fontFamily="@font/sf_pro_medium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="14sp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/form_address_via"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:focusable="false"
+                android:hint="Calle"
+                android:fontFamily="@font/sf_pro"
+                android:textSize="14sp"
+                android:inputType="none"
+                android:paddingStart="12dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="16dp" />
+
+            <TextView
+                android:id="@+id/error_via"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Nombre/Número*"
+                android:fontFamily="@font/sf_pro_medium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="14sp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/form_address_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:hint="84"
+                android:fontFamily="@font/sf_pro"
+                android:textSize="14sp"
+                android:inputType="text"
+                android:paddingStart="12dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="16dp" />
+
+            <TextView
+                android:id="@+id/error_nombrenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/error_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Vía alterna"
+                android:fontFamily="@font/sf_pro_medium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="14sp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/form_address_carrer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:focusable="false"
+                android:hint="Carrera"
+                android:fontFamily="@font/sf_pro"
+                android:textSize="14sp"
+                android:inputType="none"
+                android:paddingStart="12dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Complemento"
+                android:fontFamily="@font/sf_pro_medium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="14sp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/form_address_complement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:hint="43 Esquina"
+                android:fontFamily="@font/sf_pro"
+                android:textSize="14sp"
+                android:inputType="text"
+                android:paddingStart="12dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="16dp" />
+
+            <!-- Correo Electrónico -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Detalle"
+                android:fontFamily="@font/sf_pro_medium"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="14sp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/form_address_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:hint="Edificio Alameda, Apartamento 302"
+                android:fontFamily="@font/sf_pro"
+                android:textSize="14sp"
+                android:inputType="text"
+                android:paddingStart="12dp"
+                android:paddingTop="16dp"
+
+                android:paddingEnd="12dp"
+                android:paddingBottom="16dp" />
+
+        </LinearLayout>
+
+            <View
+                android:id="@+id/view_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+               />
+            <Button
+                android:id="@+id/btnNextStep"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:backgroundTint="@color/Matisse_700"
+                android:drawableEnd="@drawable/icon"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:paddingHorizontal="88dp"
+                android:text="Confirmar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_address"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

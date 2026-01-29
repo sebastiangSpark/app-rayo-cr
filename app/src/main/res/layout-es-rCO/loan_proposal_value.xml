@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/value_title_proposal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Nos emociona tenerte aquí!"
+        android:textSize="20sp"
+        android:textColor="@color/Matisse_700"
+        android:fontFamily="@font/sf_pro_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="16dp"
+        />
+    <TextView
+        android:id="@+id/value_text_proposal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/proposal_bold_text"
+        android:textSize="14sp"
+        android:fontFamily="@font/sf_pro"
+        android:textColor="@color/woodsmoke_700"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/value_title_proposal"
+        android:layout_marginBottom="16dp"
+        />
+    <TextView
+        android:id="@+id/value_amount_proposal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₡550,000.00 CRC"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/woodsmoke_700"
+        android:fontFamily="@font/sf_pro_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/value_text_proposal"
+        android:layout_marginBottom="16dp"
+        />
+
+    <com.rayo.rayoxml.cr.ui.renewal.custombutton.CustomButtonSelector
+        android:id="@+id/customButtonSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/value_amount_proposal"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/deadlineCardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:backgroundTint="@color/pale_sky_50"
+        app:cardCornerRadius="12dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/customButtonSelector">
+
+        <LinearLayout
+            android:id="@+id/deadlineLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="20dp">
+
+
+            <TextView
+                android:id="@+id/deadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_semibold"
+                android:text="Plazo"
+                android:textColor="@color/woodsmoke_700"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/containerText" />
+
+            <TextView
+                android:id="@+id/deadlineText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Cuota"
+                android:textColor="@color/Matisse_700"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/deadline" />
+
+            <SeekBar
+                android:id="@+id/deadlineSeekbar"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:progressDrawable="@drawable/seekbar_progress"
+                android:progressTint="@color/Matisse_700"
+                android:splitTrack="false"
+                android:thumb="@drawable/thumb_size"
+                android:thumbTint="@color/web_orange_400"
+                app:layout_constraintTop_toBottomOf="@+id/deadlineText" />
+
+            <LinearLayout
+                android:id="@+id/containerTextDeadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/deadlineSeekbar">
+
+                <TextView
+                    android:id="@+id/minValueDeadline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="1 cuota"
+                    android:textColor="@color/woodsmoke_500"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/maxValueDeadline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="3 cuotas"
+                    android:textColor="@color/woodsmoke_500"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

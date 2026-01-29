@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.info.loanTypesScreen.LargeScreenFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="102dp"
+        android:scrollbars="none"
+        >
+    <LinearLayout
+        android:id="@+id/options_large_plus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="visible"
+        app:cornerRadius="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_bold"
+            android:textAlignment="center"
+            android:text="Crédito Rayo Largo Plazo"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/Matisse_900"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro"
+            android:layout_marginTop="16dp"
+            android:text="¿Necesitas un respiro financiero que se ajuste a tu ritmo de vida? Crédito Rayo Largo Plazo te ofrece la oportunidad de manejar tus finanzas con mayor flexibilidad. Con nosotros, dispones de hasta 12 meses para pagar tu crédito, brindándote el espacio que necesitas para organizar tu economía sin presiones."
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_bold"
+            android:text="Beneficios de Crédito Rayo Largo Plazo"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro"
+            android:layout_marginTop="16dp"
+            android:text="Flexibilidad en el Pago: Hasta 12 meses para distribuir tus pagos de manera mensual."
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro"
+            android:layout_marginTop="16dp"
+            android:text="Gestión Simplificada: Proceso de solicitud y aprobación ágil y sin complicaciones.
+"
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/sf_pro"
+            android:text="Condiciones Claras: Sin letras pequeñas, te ofrecemos un panorama claro desde el inicio.
+"
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro"
+            android:layout_marginTop="16dp"
+            android:text="Nuestro Crédito Rayo Largo Plazo es ideal para aquellos clientes que han demostrado un excelente historial de pagos con nuestros productos anteriores, como el mini crédito y rayo plus. Reconocemos tu puntualidad y te recompensamos con la oportunidad de acceder a financiamiento a largo plazo."
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro"
+            android:layout_marginTop="16dp"
+            android:text="¡No dejes que las preocupaciones económicas empañen tus planes a futuro! Con Crédito Rayo Largo Plazo, obtienes más que un crédito; recibes un aliado comprometido con tu crecimiento y estabilidad financiera."
+            android:textColor="@color/woodsmoke_900"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

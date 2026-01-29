@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@drawable/card_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title_dialog_bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recuerda"
+        android:fontFamily="@font/sf_pro"
+        android:textColor="@color/woodsmoke_700"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text_dialog_bank"/>
+    <TextView
+        android:id="@+id/text_dialog_bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entre más honestas sean tus respuestas, más posibilidades tendrás de obtener tu crédito."
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/woodsmoke_600"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/sf_pro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_dialog_bank"
+        app:layout_constraintBottom_toTopOf="@id/container_list_bank"/>
+
+    <LinearLayout
+        android:id="@+id/container_list_bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_dialog_bank">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_check_list"
+                android:layout_marginEnd="8dp"
+                android:layout_gravity="top"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="La cuenta bancaria debe estar a tu nombre"
+                android:textSize="14sp"
+                android:fontFamily="@font/sf_pro"
+                android:textColor="@color/woodsmoke_600" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_check_list"
+                android:layout_marginEnd="8dp"
+                android:layout_gravity="top"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="La cuenta debe estar activa y permitir trasferencias, no debe tener bloqueos"
+                android:textSize="14sp"
+                android:fontFamily="@font/sf_pro"
+                android:textColor="@color/woodsmoke_600"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_check_list"
+                android:layout_marginEnd="8dp"
+                android:layout_gravity="top"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="El número de cuenta no es el mismo número de la tarjeta de débito. ¡¡OJO!!"
+                android:textSize="14sp"
+                android:fontFamily="@font/sf_pro"
+                android:textColor="@color/woodsmoke_600"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_check_list"
+                android:layout_marginEnd="8dp"
+                android:layout_gravity="top"/>
+
+            <TextView
+                android:id="@+id/textViewList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No aplica para Nequi, Daviplata o ahorro a la mano"
+                android:textSize="14sp"
+                android:fontFamily="@font/sf_pro"
+                android:textColor="@color/woodsmoke_600"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/btn_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entendido"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"
+            android:fontFamily="@font/sf_pro_medium"
+            android:gravity="end"
+            android:textColor="@color/Matisse_700"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/container_text_dialog_bank"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

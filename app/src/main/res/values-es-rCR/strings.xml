@@ -1,0 +1,78 @@
+<resources>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_new">primer FRAGMENT</string>
+    <string name="open">abrir</string>
+    <string name="close">cerrar</string>
+    <!-- ONBOARDING -->
+    <string name="onboarding_title">¡Es bueno verte otra vez!</string>
+    <string name="onboarding_title_two">Confianza en cada paso</string>
+    <string name="onboarding_title_tree">Tu crédito, como lo necesitas</string>
+    <string name="onboarding_title_four">Estamos aquí para ayudarte</string>
+    <string name="onboarding_text">Inicia sesión y accede a soluciones financieras diseñadas para ti.</string>
+    <string name="onboarding_text_two">Tu tranquilidad es nuestra prioridad. En Rayo, protegemos tus datos con la tecnología más avanzada y te ofrecemos un proceso completamente transparente.</string>
+    <string name="onboarding_text_tree">Con nuestro simulador, personaliza el monto y las cuotas a tu medida. Toma el control de tus finanzas en tan solo unos clics, sin tanto papeleo ni largas esperas.</string>
+    <string name="onboarding_text_four">No estás solo en este camino. Nuestro equipo de expertos y herramientas inteligentes están listos para resolver tus dudas y acompañarte en cada paso.</string>
+    <string name="onboarding_next">Siguiente</string>
+    <string name="onboarding_skip">Omitir</string>
+    <!-- SELECT COUNTRY  -->
+    <string name="country_start">Comenzar</string>
+    <string name="country_title">Selecciona tu país</string>
+    <string name="country_text">Por favor, selecciona tu país. Esto nos ayudará a ofrecerte la mejor experiencia en Rayo.</string>
+    <!-- PROFILE  -->
+    <string name="personal_info">Información del cliente</string>
+    <string name="name">Nombre</string>
+    <string name="last_name">Apellidos</string>
+    <string name="birth_date">Fecha de nacimiento</string>
+    <string name="phone">Teléfono</string>
+    <string name="email">Correo electrónico</string>
+    <string name="bank_info">Información bancaria</string>
+    <string name="your_bank">Tu banco</string>
+    <string name="account_type">Tipo de cuenta</string>
+    <string name="account_number">Número de cuenta</string>
+    <!-- HOME  -->
+    <string name="home_header_text">Mis préstamos</string>
+    <string name="home_see_text">Ver todos</string>
+    <!-- HOME CARDS  -->
+    <string name="home_card_one">Aumento de cupo en tus siguientes renovaciones</string>
+    <string name="home_card_two">Línea de crédito hasta por $2.500.000 COP desde tu préstamo N° 13</string>
+    <!-- CREDIT DETAIL  -->
+    <string name="total_to_pay">Valor a solicitar</string>
+    <string name="credit_detail">Detalles de tu crédito</string>
+    <string name="interest">Interés (37,5% TEA)</string>
+    <string name="interest_proposal">Interés</string>
+    <string name="subtotal">Monto a prestar</string>
+    <string name="subtotal_proposal">Sub total</string>
+    <string name="technology">Tecnología (opcional)</string>
+    <string name="technology_proposal">Monto tecnología bruto (opcional)</string>
+    <string name="technology_net">Monto tecnología neto</string>
+    <string name="IVAtechnology">IVA</string>
+    <string name="bond">Fianza (CONFÉ) + IVA</string>
+    <string name="proposal_total_payment">Valor a solicitar</string>
+    <string name="proposal_total_disbursement">Total a desembolsar</string>
+    <string name="suggested_value">Valor sugerido</string>
+    <string name="discount">Descuentos</string>
+    <string name="final_text_credit_details">Verifica la información antes de continuar</string>
+    <string name="payments">Abonos</string>
+    <string name="open_drawer">Abrir menú</string>
+    <string name="close_drawer">Cerrar menú</string>
+    <!-- Tipos de cuentas bancarias - BankInfoFormFragment -->
+    <string-array name="bank_account_type_options">
+        <item>Seleccione su tipo de cuenta</item>
+        <item>Ahorros</item>
+        <item>Corriente</item>
+    </string-array>
+    <!-- Número Whatsapp -->
+    <string name="contact_number_colombia">50662433325</string>
+    <string name="contact_message">¡Hola! Requiero conversar con un asesor.</string>
+    <!-- Alerts créditos -->
+    <string name="interest_info_title">Interés (37,5% TEA)</string>
+    <string name="technology_info_title">Tecnología</string>
+    <string name="iva_info_title">IVA de tecnología</string>
+
+    <string name="interest_info_content">Es el índice utilizado para medir el costo de tu crédito. La tasa de interés cobrada por RAYO en todos tus créditos es del 37,5% E.A (Efectivo Anual).</string>
+    <string name="technology_info_content">Este cargo te abre las puertas de toda nuestra plataforma y sus beneficios. Es opcional, pero aceptarlo es obtener los servicios adicionales a los canales tradicionales para el manejo de tu cupo de crédito. Cambias las filas, los turnos y los papeleos, por un servicio simple, rápido y 100% digital. Además, obtener descuentos y descargar cupones de nuestras marcas aliadas.</string>
+    <string name="iva_info_content">(Monto Bruto Tecnología + Cupo Administrativo) * 13%</string>
+    <!--Renovación-->
+    <string name="proposal_bold_text">Entendemos que esperabas un préstamo de mayor monto.
+        En <b>RAYO</b> queremos conocerte mejor, por lo que te proponemos este valor aprobado</string>
+</resources>

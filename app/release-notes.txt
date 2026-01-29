@@ -1,0 +1,8 @@
+Versión 1.0.1 (113)
+
+- Corrección de márgenes en los pasos introductorios para una mejor lectura.
+- Actualización del texto de ayuda en el formulario de préstamos en el campo de cédula.
+- Ajuste en la aparición del modal de cargo por tecnología.
+- Mejora en los textos de las secciones de beneficios y tipos de préstamo para Costa Rica.
+- Corrección validación en campo de cuenta IBAN
+- Actualización numero de whatsapp para Costa Rica

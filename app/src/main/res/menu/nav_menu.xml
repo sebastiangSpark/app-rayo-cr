@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn= "navigation_view" >
+    <item
+        android:id="@+id/nav_login"
+        style="@style/CustomNavigationView"
+        android:icon="@drawable/ic_drawer_profile_svg"
+        android:title="Acceder a mi cuenta"
+        />
+    <item
+        android:id="@+id/nav_loan_types"
+        android:icon="@drawable/ic_drawer_loan"
+        android:title="Tipos de préstamos"/>
+    <item
+        android:id="@+id/nav_benefit"
+        android:icon="@drawable/ic_drawer_benefit"
+        android:title="Beneficios"/>
+    <item
+        android:id="@+id/nav_contact"
+        android:icon="@drawable/ic_drawer_contact"
+        android:title="Contáctanos"/>
+</menu>
