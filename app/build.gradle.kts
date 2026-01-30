@@ -28,7 +28,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.rayo.android.app"
+        applicationId = "com.rayo.cr"
         minSdk = 24
         targetSdk = 35
         versionCode = 11010
