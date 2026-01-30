@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.rayo.android.app",
+  "applicationId": "com.rayo.cr",
   "variantName": "release",
   "elements": [
     {

@@ -2,31 +2,37 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     // Agregar dependencia Grade para Google Services
-    id("com.google.gms.google-services")
+    // id("com.google.gms.google-services")
     // Add the App Distribution Gradle plugin
-    id("com.google.firebase.appdistribution")
-    id ("com.google.firebase.crashlytics")
+    // id("com.google.firebase.appdistribution")
+    // id ("com.google.firebase.crashlytics")
     id ("kotlin-parcelize")
 }
 
 android {
     signingConfigs {
         create("release") {
-            storeFile = file("${projectDir}/rayo-app-keystore.jks")
-            storePassword = "1|WsE@~g37s<4~2j7S"
-            keyAlias = "rayo-app-keystore"
-            keyPassword = "1|WsE@~g37s<4~2j7S"
+            storeFile = file("${projectDir}/rayo_cr.jks")
+            storePassword = "RayoCR_2.026"
+            keyAlias = "rayo_cr"
+            keyPassword = "RayoCR_2.026"
         }
+        //create("release") {
+        //    storeFile = file("${projectDir}/rayo-app-keystore.jks")
+        //    storePassword = "1|WsE@~g37s<4~2j7S"
+        //    keyAlias = "rayo-app-keystore"
+        //    keyPassword = "1|WsE@~g37s<4~2j7S"
+        //}
     }
     namespace = "com.rayo.rayoxml"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.rayo.android.app"
+        applicationId = "com.rayo.cr"
         minSdk = 24
         targetSdk = 35
-        versionCode = 113
-        versionName = "1.0.1"
+        versionCode = 12000
+        versionName = "1.2.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -74,11 +80,11 @@ android {
                 "proguard-rules.pro"
             )
             signingConfig = signingConfigs.getByName("release")
-            firebaseAppDistribution {
-                serviceCredentialsFile = "app/rayo-dev-66180-158c24e11c28.json"
-                releaseNotesFile = "app/release-notes.txt"
-                groups = "rayo-dev-team"
-            }
+            // firebaseAppDistribution {
+            //     serviceCredentialsFile = "app/rayo-dev-66180-158c24e11c28.json"
+            //     releaseNotesFile = "app/release-notes.txt"
+            //     groups = "rayo-dev-team"
+            // }
         }
     }
 
@@ -118,13 +124,13 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     // Import the Firebase BoM
-    implementation(platform("com.google.firebase:firebase-bom:33.8.0"))
+    // implementation(platform("com.google.firebase:firebase-bom:33.8.0"))
 
     // TODO: Add the dependencies for Firebase products you want to use
     // See https://firebase.google.com/docs/android/setup#available-libraries
     // For example, add the dependencies for Firebase Authentication and Cloud Firestore
-    implementation("com.google.firebase:firebase-config")
-    implementation(libs.firebase.crashlytics.ktx)
+    // implementation("com.google.firebase:firebase-config")
+    // implementation(libs.firebase.crashlytics.ktx)
 
     implementation("com.google.code.gson:gson:2.10.1")
 
@@ -142,5 +148,7 @@ dependencies {
     // QR
     implementation("com.google.zxing:core:3.5.1")  // ZXing Core Library
     implementation("com.journeyapps:zxing-android-embedded:4.3.0")  // For BarcodeEncoder
+
+    implementation("androidx.profileinstaller:profileinstaller:1.3.1")
 
 }
