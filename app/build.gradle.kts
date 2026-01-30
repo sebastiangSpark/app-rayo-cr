@@ -12,11 +12,17 @@ plugins {
 android {
     signingConfigs {
         create("release") {
-            storeFile = file("${projectDir}/rayo-app-keystore.jks")
-            storePassword = "1|WsE@~g37s<4~2j7S"
-            keyAlias = "rayo-app-keystore"
-            keyPassword = "1|WsE@~g37s<4~2j7S"
+            storeFile = file("${projectDir}/rayo_cr.jks")
+            storePassword = "RayoCR_2.026"
+            keyAlias = "rayo_cr"
+            keyPassword = "RayoCR_2.026"
         }
+        //create("release") {
+        //    storeFile = file("${projectDir}/rayo-app-keystore.jks")
+        //    storePassword = "1|WsE@~g37s<4~2j7S"
+        //    keyAlias = "rayo-app-keystore"
+        //    keyPassword = "1|WsE@~g37s<4~2j7S"
+        //}
     }
     namespace = "com.rayo.rayoxml"
     compileSdk = 35
