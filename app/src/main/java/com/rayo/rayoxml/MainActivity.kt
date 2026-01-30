@@ -45,11 +45,11 @@ import com.rayo.rayoxml.co.viewModels.MainViewModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.navigation.NavigationView
-import com.google.firebase.ktx.Firebase
+// import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.launch
-import com.google.firebase.remoteconfig.FirebaseRemoteConfig
-import com.google.firebase.remoteconfig.ktx.remoteConfig
-import com.google.firebase.remoteconfig.ktx.remoteConfigSettings
+// import com.google.firebase.remoteconfig.FirebaseRemoteConfig
+// import com.google.firebase.remoteconfig.ktx.remoteConfig
+// import com.google.firebase.remoteconfig.ktx.remoteConfigSettings
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.collectLatest
@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity(), OnLocaleChangedListener {
     private lateinit var navController: NavController
     private lateinit var drawerLayout: DrawerLayout
     private lateinit var preferencesManager: PreferencesManager
-    private lateinit var remoteConfig: FirebaseRemoteConfig
+    // private lateinit var remoteConfig: FirebaseRemoteConfig
     private lateinit var flagMenu: ImageView
 
 
@@ -535,25 +535,25 @@ class MainActivity : AppCompatActivity(), OnLocaleChangedListener {
     }
 
     private fun initRemoteConfig() {
-        remoteConfig = Firebase.remoteConfig
-        val configSettings = remoteConfigSettings {
-            minimumFetchIntervalInSeconds = 3600
-        }
-        remoteConfig.setConfigSettingsAsync(configSettings)
+        // remoteConfig = Firebase.remoteConfig
+        // val configSettings = remoteConfigSettings {
+        //     minimumFetchIntervalInSeconds = 3600
+        // }
+        // remoteConfig.setConfigSettingsAsync(configSettings)
 
-        remoteConfig.fetchAndActivate().addOnCompleteListener { task ->
-            if (task.isSuccessful) {
-                // Credit params
-                val jsonString = remoteConfig.getString("credit_parameters")
-                CreditParameterManager.saveRemoteConfigData(jsonString)
-                Log.d("MainActivity", "Remote Config Loaded: $jsonString")
+        // remoteConfig.fetchAndActivate().addOnCompleteListener { task ->
+        //     if (task.isSuccessful) {
+        //         // Credit params
+        //         val jsonString = remoteConfig.getString("credit_parameters")
+        //         CreditParameterManager.saveRemoteConfigData(jsonString)
+        //         Log.d("MainActivity", "Remote Config Loaded: $jsonString")
 
-                // Credit information
-                val jsonStringCreditInfo = remoteConfig.getString("credit_information")
-                CreditInformationManager.saveRemoteConfigData(jsonStringCreditInfo)
-                Log.d("MainActivity", "Remote Config Loaded: $jsonStringCreditInfo")
-            }
-        }
+        //         // Credit information
+        //         val jsonStringCreditInfo = remoteConfig.getString("credit_information")
+        //         CreditInformationManager.saveRemoteConfigData(jsonStringCreditInfo)
+        //         Log.d("MainActivity", "Remote Config Loaded: $jsonStringCreditInfo")
+        //     }
+        // }
     }
 
     private fun observeNavigation() {
